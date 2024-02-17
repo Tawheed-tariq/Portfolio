@@ -1,7 +1,7 @@
 import {navLinks, contactLinks} from '../constants/index'
 export default function NavBar(){
     return(
-        <div className={`bg-backgroundBlur w-full h-[70px] border-b-[1px]  border-black flex justify-between items-center px-[250px]`}>
+        <div className={`bg-backgroundBlur w-full h-[70px] border-b-[1px]  border-black flex justify-between items-center px-[20px] md:px-[250px]`}>
             <div className={`text-txt text-[20px] font-semibold`}>
                 Tavaheed Tariq
             </div>

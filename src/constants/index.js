@@ -40,3 +40,21 @@ export const contactLinks = [
     }
 ]
 
+export const experience = [
+    {
+        id: "1",
+        icon : "semicolon.png",
+        title: "Technical Member",
+        desc: "Technical Member - Semicolon NIT SRI official coding club of NIT SRI.",
+        strt: "Sep 2023",
+        end: "Present"
+    },
+    {
+        id: "2",
+        icon : "freelance.png",
+        title: "Freelancer",
+        desc: "Freelancer - developing front-end and back-end websites.",
+        strt: "Dec 2023",
+        end: "Present"
+    }
+]
