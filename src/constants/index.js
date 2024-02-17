@@ -122,7 +122,7 @@ export const backend_skills = [
     },
     {
         id: "3",
-        icon: "nodejs.png",
+        icon: "Nodejs.png",
         title: "Node.JS"
     },
     {
@@ -132,7 +132,7 @@ export const backend_skills = [
     },
     {
         id: "5",
-        icon: "mongodb.png",
+        icon: "mongoDB.png",
         title: "MongoDB"
     },
     {
@@ -170,7 +170,7 @@ export const tools = [
     },
     {
         id: "5",
-        icon: "netlify.png",
+        icon: "Netlify.png",
         title: "Netlify"
     },
     {
