@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        backgroundBlur : "rgba(248, 253, 249, 0.5)",
         background: "#F8FDF9",
         primary: "#45CE52",
         secondary: "#4F45A5",

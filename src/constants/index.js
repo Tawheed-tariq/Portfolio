@@ -32,5 +32,11 @@ export const contactLinks = [
         id: "2",
         url: "https://www.linkedin.com/in/tawheed-tariq-868b02249/",
         icon: 'linkedin.png'
+    },
+    {
+        id: "3",
+        url: "",
+        icon: 'gmail.png'
     }
 ]
+
