@@ -6,9 +6,17 @@ export default function About(){
             <div className={`w-full h-[80vh]`}>
                 {/* About me */}
                 <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[90px] px-[20px] md:px-[250px]`}>
-                    <h1 className={`text-2xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
-                    <h2 className={`text-xl font-medium text-txt`}>I'm a <span className={`decorate-text`}>Full-Stack Developer</span></h2>
-                    <p className={`text-md text-txt w-[80%]`}>I am an Information Technology undergrad at NIT Srinagar with a passion of technology and creativity. I have a deep interest in Web-development, Web-scraping, AI/ML and Cyber security. Experienced in HTML, CSS, JS, Reactjs, Nodejs, Expressjs, TailwindCSS, Python .....</p>
+                    <h1 className={`text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
+                    <h2 className={`text-2xl font-medium text-txt`}>I'm a <span className={`decorate-text`}>Full-Stack Developer</span></h2>
+                    <p className={`text-lg text-txt w-[80%]`}>
+                        Dedicated and innovative B.Tech student majoring in Information Technology
+                         at NIT Srinagar, deeply passionate about exploring the intersections of 
+                         technology and human experience. With a solid foundation in web development 
+                         and web scraping, I am committed to leveraging my skills to drive impactful 
+                         solutions in the ever-evolving landscape of IT. Eager to contribute my expertise 
+                         to collaborative teams, tackle complex challenges, and continually learn and grow 
+                         in the dynamic field of technology.                        
+                    </p>
                 </div>
 
                 {/* connect with me */}
@@ -34,14 +42,13 @@ export default function About(){
             </div>
             <ParticlesBg
                 type="cobweb"
-                num={200} // Number of particles
-                lineWidth={2} // Width of the cobweb lines
-                density={5000} // Density of particles
-                bg={true} // Set to true to use as background
-                size={10} // Size of particles
-                speed={3} // Speed of particles
-                hoverEffect={true} // Enable hover effect
-                hoverMode="repulse" // Repulse particles on hover
+                num={200} 
+                density={5000} 
+                bg={true} 
+                size={10} 
+                speed={3}
+                hoverEffect={true} 
+                hoverMode="repulse"
             />
             <hr className={`w-full border-black mt-[80px]`} />
         </>

@@ -44,8 +44,8 @@ export const experience = [
     {
         id: "1",
         icon : "semicolon.png",
-        title: "Technical Member",
-        desc: "Technical Member - Semicolon NIT SRI official coding club of NIT SRI.",
+        title: "Technical Member - Semicolon",
+        desc: "As a technical member of Semicolon, the coding club at NIT Srinagar, I played a pivotal role in fostering a culture of innovation and technical excellence. Collaborating with a diverse team, I organized workshops, hackathons, and technical events to promote learning and skill development in various areas of technology.",
         strt: "Sep 2023",
         end: "Present"
     },
@@ -53,7 +53,7 @@ export const experience = [
         id: "2",
         icon : "freelance.png",
         title: "Freelancer",
-        desc: "Freelancer - developing front-end and back-end websites.",
+        desc: "As a dedicated freelancer, I specialize in web development and web scraping, offering tailored solutions to clients across various industries. With a strong foundation in programming languages such as HTML, CSS, JavaScript, and Python, I have successfully delivered projects ranging from dynamic websites to data-driven applications.",
         strt: "Dec 2023",
         end: "Present"
     }
@@ -64,7 +64,7 @@ export const education = [
         id: "1",
         icon : "NIT.png",
         title: "National Institute of technology Srinagar",
-        desc: "Currently pursuing B-tech in Information Technology from National Institute of technology Srinagar, I have completed 3 semesters and have a CGPA of 9, I have taken courses in Data structures, Object Oriented Programming in C++ and others.",
+        desc: "Currently in my fourth semester, I am pursuing a Bachelor of Technology (B.Tech) degree in Information Technology at NIT Srinagar. With a cumulative grade point average (CGPA) of 9.0, I have demonstrated strong academic performance and dedication to my studies.Developed a solid understanding of fundamental data structures and algorithms, enabling me to efficiently solve complex problems and optimize code.",
         strt: "Nov 2022",
         end: "Present",
         grade: "9 CGPA"
@@ -73,7 +73,7 @@ export const education = [
         id: "2",
         icon : "school.png",
         title: "MPML Higher secondary",
-        desc: "Completed my Higher secondary from MPML Higher Secondary School, Srinagar.",
+        desc: "I completed my Higher Secondary Education with outstanding academic performance from MPML Higher Secondary School, achieving an exceptional percentage of 98.2%. This rigorous academic journey instilled in me a strong foundation in various subjects, critical thinking skills, and a commitment to excellence.",
         strt: "Dec 2019",
         end: "Dec 2021",
         grade: "98.2 %"
@@ -185,28 +185,28 @@ export const projects = [
     {
         id: "1",
         title : "Car Racing Game",
-        desc: "A car racing game which shows the score gained, highest score and on crash resets the game.",
+        desc: "Created an engaging racing game using HTML, CSS, and JavaScript. Demonstrates frontend development skills with dynamic visuals and responsive controls. Showcases creativity and problem-solving in delivering an immersive gaming experience, emphasizing adaptability and innovation in web development.",
         skills_used: "HTML, CSS, JavaScript",
         img: ""
     },
     {
         id: "2",
         title : "Crypto Dashboard",
-        desc: "A crypto currency Dashboard , uses crypto api to get the data of crypto currencies",
+        desc: "Developed a sleek and intuitive frontend for a cryptocurrency dashboard using HTML, CSS, JavaScript,Figma, Chakra UI, and ReactJS. Seamlessly integrated Chakra UI components for enhanced UI design and responsiveness. Implemented real-time data updates and interactive charts using ReactJS libraries. The dashboard provides comprehensive insights into cryptocurrency market trends, portfolio performance, and transaction history.",
         skills_used: "HTML, CSS, JavaScript, React.js. ChakraUI, Figma.",
         img: ""
     },
     {
         id: "3",
         title : "Chat App",
-        desc: "A real-time chat application which can be used to chat with our friends in real-time.",
+        desc: "Built a real-time chat application using MERN stack (MongoDB, Express.js, React.js, Node.js, Figma), HTML, CSS, and Chakra UI. Enables users to send messages to each other in real-time. Demonstrates proficiency in frontend and backend technologies, facilitating seamless communication and collaboration in a dynamic web environment.",
         skills_used: "HTML, CSS, JavaScript, React.js, ChakraUI,Node.js, Express.js, MongoDB, Figma.",
         img: ""
     },
     {
         id: "4",
         title : "Google maps Scraper",
-        desc: "A web-scraper which scrapes google maps based on the search and provides an excel file of output which contains name, address, website url, phone number and reviews of the given search.",
+        desc: "Developed a web scraping and automation project named Google Maps Scraper. Extracts name, address, website URL, and phone number from specified searches on Google Maps. Outputs data into an Excel sheet for easy analysis. Streamlines information retrieval process, enhancing efficiency in data gathering tasks.",
         skills_used: " Python, Pandas, argparse. playwright, web-scraping",
         img: ""
     },
