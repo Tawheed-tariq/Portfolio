@@ -8,14 +8,16 @@ export default function Education(){
 
                 {
                     education.map((item) => (
-                        <Card
-                            img_url={item.icon}
-                            title={item.title}
-                            Desc={item.desc}
-                            from={item.strt}
-                            to={item.end}
-                            grade={item.grade}
-                        />
+                        <div key={item.id}>
+                            <Card
+                                img_url={item.icon}
+                                title={item.title}
+                                Desc={item.desc}
+                                from={item.strt}
+                                to={item.end}
+                                grade={item.grade}
+                            />
+                        </div>
                     ))
                 }
 

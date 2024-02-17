@@ -25,7 +25,7 @@ export default function Skils(){
                 <h1 className={`text-2xl font-bold text-txt`}>Skills</h1>
                 {
                     skills.map((skill) => (
-                        <div id={skill.id} className={`flex gap-[15px] my-[15px] mx-[20px]`}>
+                        <div key={skill.id} className={`flex gap-[15px] my-[15px] mx-[20px]`}>
                             <SkillCard skillName={skill.name} skillArray={skill.arrName}/>
                         </div>
                     ))

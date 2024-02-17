@@ -1,9 +1,9 @@
 import { contactLinks } from "../constants"
+import ParticlesBg from 'particles-bg' //using particles-bg because react-particles-js is not working
 export default function About(){
     return(
         <>
             <div className={`w-full h-[80vh]`}>
-
                 {/* About me */}
                 <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[90px] px-[20px] md:px-[250px]`}>
                     <h1 className={`text-2xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
@@ -17,7 +17,7 @@ export default function About(){
                     <div className={`flex justify-between items-center w-[200px] py-[20px] px-[15px]`}>
                         {
                             contactLinks.map((item) => (
-                                <a href={item.url} id={item.id} className='cursor-pointer' >
+                                <a href={item.url} key={item.id} className='cursor-pointer' >
                                     <img src={item.icon} className={`w-[35px] h-[35px]`} />
                                 </a>
                             ))
@@ -32,7 +32,18 @@ export default function About(){
                     </button>
                 </div>
             </div>
+            <ParticlesBg
+                type="cobweb"
+                num={200} // Number of particles
+                lineWidth={2} // Width of the cobweb lines
+                density={5000} // Density of particles
+                bg={true} // Set to true to use as background
+                size={10} // Size of particles
+                speed={3} // Speed of particles
+                hoverEffect={true} // Enable hover effect
+                hoverMode="repulse" // Repulse particles on hover
+            />
             <hr className={`w-full border-black mt-[80px]`} />
         </>
     )
-}
+    }

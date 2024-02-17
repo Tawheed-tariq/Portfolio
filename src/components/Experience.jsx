@@ -8,13 +8,15 @@ export default function Experience(){
 
                 {
                     experience.map((item) => (
-                        <Card
-                            img_url={item.icon}
-                            title={item.title}
-                            Desc={item.desc}
-                            from={item.strt}
-                            to={item.end}
-                        />
+                        <div key={item.id}>
+                            <Card
+                                img_url={item.icon}
+                                title={item.title}
+                                Desc={item.desc}
+                                from={item.strt}
+                                to={item.end}
+                            />
+                        </div>
                     ))
                 }
             </div>

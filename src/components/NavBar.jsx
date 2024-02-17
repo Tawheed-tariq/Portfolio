@@ -8,7 +8,7 @@ export default function NavBar(){
             <div className={`flex w-[40%] justify-between`}>
                 {
                     navLinks.map((link) => (
-                        <a className={`text-[12px] cursor-pointer link`} id={link.id}>
+                        <a className={`text-[12px] cursor-pointer link`} key={link.id}>
                             {link.title}
                         </a>
                     ))
@@ -17,7 +17,7 @@ export default function NavBar(){
             <div className={`flex justify-between gap-[12px] items-center`}>
                 {
                     contactLinks.map((item) => (
-                        <a href={item.url} id={item.id} className='cursor-pointer' >
+                        <a href={item.url} key={item.id} className='cursor-pointer' >
                             <img src={item.icon} className={`w-[20px] h-[20px]`} />
                         </a>
                     ))
