@@ -9,7 +9,7 @@ export default function Experience(){
                 <div className={`timeline-items flex flex-wrap relative max-w-[100%]`}>
                     {
                         experience.map((item) => (
-                            <div key={item.id} className={`timeline-item mb-[40px] w-[100%] relative`}>
+                            <div key={item.id} className={`timeline-item mb-[10px] md:mb-[40px] w-[100%] relative`}>
                                 <div className="timeline-dot"></div>
                                 <Card
                                     img_url={item.icon}

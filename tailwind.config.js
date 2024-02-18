@@ -14,6 +14,7 @@ export default {
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         txt: "#051408",
+        txtDim : 'rgba(5,20,8,0.83)',
         accent: "#4C729F",
       },
       fontFamily: {
