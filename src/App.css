@@ -5,18 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --black-gradient: linear-gradient(
-      144.39deg,
-      #ffffff -278.56%,
-      #6d6d6d -78.47%,
-      #11101d 91.61%
-    );
-    --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
-  }
-  
-  
-
+    
 *{
     margin: 0;
     padding: 0;
@@ -33,15 +22,22 @@ body{
 .link{
     transition: color 0.5s ;
 }
-.link:hover{
-    color: rgba(9, 151, 124, 0.7);
-}
 
 .decorate-text{
     background: linear-gradient(to right, #45CE52, #4C729F,#4F45A5);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+.linearBG{
+  background: linear-gradient(to right, #45ce53,#4f45a5);
+  cursor: pointer;
+}
+
+.linearBG:hover{
+  background: linear-gradient(to right, #45ce53, #4c719f9e,#4f45a552);
+  color: #051408;
 }
 
 
@@ -78,21 +74,6 @@ body{
 	top:45px;
 }
 
-@media (max-width: 768px) {
-  .timeline-items::before{
-    left: 5px;
-  }
-  .timeline-dot{
-    left: -1px;
-  }
-  .timeline-item:nth-child(odd){
-    padding-right: 0;
-  }
-  .timeline-item:nth-child(even){
-      padding-left: 0;
-  }
-
-}
 
 
 
@@ -128,3 +109,33 @@ body{
       filter: blur(0);
     }
 }
+
+
+.shadow{
+  box-shadow: 4px 5px 20px rgba(46, 42, 43, 0.336);
+  transition: box-shadow 0.3s;
+}
+
+.shadow:hover{
+  box-shadow: 3px 4px 10px rgba(46, 42, 43, 0.536);
+}
+
+@media (max-width: 768px) {
+  .timeline-items::before{
+    left: 5px;
+  }
+  .timeline-dot{
+    left: -1px;
+  }
+  .timeline-item:nth-child(odd){
+    padding-right: 0;
+  }
+  .timeline-item:nth-child(even){
+      padding-left: 0;
+  }
+  .shadow{
+    box-shadow: 4px 5px 10px rgba(46, 42, 43, 0.336);
+  }
+}
+
+

@@ -5,9 +5,9 @@ export default function About(){
     const texts = ["Full-stack Developer", "Web Scraper"];
     return(
         <>
-            <div className={`w-full min-h-[80vh] px-[20px] xl:px-[250px]`}>
+            <div className={`w-full min-h-[90vh] px-[20px] xl:px-[250px]`}>
                 {/* About me */}
-                <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[30px] md:pt-[90px]`}>
+                <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[100px] md:pt-[150px]`}>
                     <h1 className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
                     <Typewriter texts={texts}/>
 
@@ -38,7 +38,7 @@ export default function About(){
 
                 {/* resume button */}
                 <div className={`w-full flex justify-center`}>
-                    <button className={`w-[200px] bg-backgroundBlur mt-[20px] font-medium decorate-text text-xl cursor-pointer h-[55px] border-[1px] rounded-[30px] border-black`}>
+                    <button className={`w-[200px] shadow bg-transparent backdrop-blur-sm mt-[20px] font-medium decorate-text text-xl cursor-pointer h-[55px] rounded-full `}>
                         Check Resume
                     </button>
                 </div>

@@ -5,7 +5,7 @@ export default function NavBar(){
     return(
         <nav>
             {/* navbar for devices of width greater than 768px */}
-            <div className={`bg-backgroundBlur w-full h-[70px] border-b-[1px]  border-black hidden sm:flex justify-between items-center px-[40px] md:px-[80px] lg:px-[170px] xl:px-[250px]`}>
+            <div className={`bg-transparent backdrop-blur-sm w-full h-[70px] border-b-[1px]  border-black hidden sm:flex justify-between items-center px-[40px] md:px-[80px] lg:px-[170px] xl:px-[250px] fixed z-10`}>
                 <div className={`text-txt text-lg md:text-[20px] font-semibold`}>
                     Tavaheed Tariq
                 </div>
@@ -39,7 +39,7 @@ export default function NavBar(){
 
 
             {/* navbar for devices of width less than 768px */}
-            <div className={`bg-backgroundBlur w-full h-[70px] border-b-[1px]  border-black flex sm:hidden justify-between items-center px-[40px]`}>
+            <div className={`bg-transparent backdrop-blur-sm fixed z-10 w-full h-[70px] border-b-[1px]  border-black flex sm:hidden justify-between items-center px-[40px]`}>
                 <div className={`text-txt text-lg font-semibold`}>
                     Tavaheed Tariq
                 </div>
@@ -52,7 +52,7 @@ export default function NavBar(){
                     onClick={() => setToggle((prev) => !prev)}
                 />
 
-                <div className={`${toggle? 'flex' : 'hidden'} gap-[15px] z-[999] p-6 slide-up absolute top-20 right-0 flex-col mx-4 my-2 min-w-[100px] rounded-xl justify-between`}>
+                <div className={`${toggle? 'flex' : 'hidden'} gap-[15px] z-[999] backdrop-blur-sm p-6 slide-up absolute top-20 right-0 flex-col mx-4 my-2 min-w-[100px] rounded-xl justify-between`}>
                     {
                         navLinks.map((link) => (
                             <a className={`text-[16px] font-medium text-txt cursor-pointer link`} key={link.id}>

@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/About'
+import Contact from './components/Contact'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import NavBar from './components/NavBar'
@@ -11,9 +12,10 @@ function App() {
       <NavBar/>
       <About/>
       <Experience/>
-      <Projects/>
+      {/* <Projects/> */}
       <Skils/>
       <Education/>
+      <Contact/>
     </>
   )
 }
