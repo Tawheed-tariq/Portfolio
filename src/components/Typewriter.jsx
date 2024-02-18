@@ -41,8 +41,8 @@ const Typewriter = ({ texts }) => {
 
   return (
     <div className={`flex`}>
-      <h2 className={`text-2xl font-semibold text-txt`}>I'm a </h2>
-      <div className={`font-semibold decorate-text text-2xl ml-[10px]`}>{currentText}</div>
+      <h2 className={`text-lg md:text-2xl font-semibold text-txt`}>I'm a </h2>
+      <div className={`font-semibold decorate-text text-lg md:text-2xl ml-[10px]`}>{currentText}</div>
     </div>
     )
 };

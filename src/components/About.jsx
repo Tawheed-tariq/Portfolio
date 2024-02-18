@@ -5,13 +5,13 @@ export default function About(){
     const texts = ["Full-stack Developer", "Web Scraper"];
     return(
         <>
-            <div className={`w-full h-[80vh] px-[20px] md:px-[250px]`}>
+            <div className={`w-full min-h-[80vh] px-[20px] xl:px-[250px]`}>
                 {/* About me */}
-                <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[90px]`}>
-                    <h1 className={`text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
+                <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[30px] md:pt-[90px]`}>
+                    <h1 className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
                     <Typewriter texts={texts}/>
 
-                    <p className={`text-lg text-txt w-[80%]`}>
+                    <p className={`text-md md:text-lg text-txt md:w-[80%]`}>
                         Dedicated and innovative B.Tech student majoring in Information Technology
                          at NIT Srinagar, deeply passionate about exploring the intersections of 
                          technology and human experience. With a solid foundation in web development 
@@ -23,13 +23,13 @@ export default function About(){
                 </div>
 
                 {/* connect with me */}
-                <div className={`w-[80%] my-[20px] mx-auto pt-[50px]`}>
-                    <h1 className={`text-2xl font-semibold text-txt`}>Connect with me</h1>
-                    <div className={`flex justify-between items-center w-[200px] py-[20px] px-[15px]`}>
+                <div className={`md:w-[80%] my-[20px] mx-auto pt-[50px]`}>
+                    <h1 className={`text-xl md:text-2xl font-semibold text-txt`}>Connect with me</h1>
+                    <div className={`flex justify-between items-center w-[150px] md:w-[200px] py-[20px] px-[15px]`}>
                         {
                             contactLinks.map((item) => (
                                 <a href={item.url} key={item.id} className='cursor-pointer' >
-                                    <img src={item.icon} className={`w-[35px] h-[35px]`} />
+                                    <img src={item.icon} className={`md:w-[35px] md:h-[35px] w-[25px] h-[25px]`} />
                                 </a>
                             ))
                         }
@@ -42,18 +42,18 @@ export default function About(){
                         Check Resume
                     </button>
                 </div>
+                <ParticlesBg
+                    type="cobweb"
+                    md:num={200}
+                    num={70}
+                    bg={true} 
+                    size={10} 
+                    speed={3}
+                    hoverEffect={true} 
+                    hoverMode="repulse"
+                />
             </div>
-            <ParticlesBg
-                type="cobweb"
-                num={200} 
-                density={5000} 
-                bg={true} 
-                size={10} 
-                speed={3}
-                hoverEffect={true} 
-                hoverMode="repulse"
-            />
-            <hr className={`w-full border-black mt-[80px]`} />
+            <hr className={`w-full border-black mt-[40px]`} />
         </>
     )
     }
