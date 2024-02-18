@@ -5,7 +5,7 @@ export default function About(){
     const texts = ["Full-stack Developer", "Web Scraper"];
     return(
         <>
-            <div className={`w-full min-h-[90vh] px-[20px] xl:px-[250px]`}>
+            <div id="about" className={`w-full min-h-[90vh] px-[20px] xl:px-[250px]`}>
                 {/* About me */}
                 <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[100px] md:pt-[150px]`}>
                     <h1 className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
@@ -42,15 +42,15 @@ export default function About(){
                         Check Resume
                     </button>
                 </div>
-                <ParticlesBg
-                    type="cobweb"
-                    num={100}
-                    bg={true} 
-                    size={10} 
-                    speed={3}
-                />
             </div>
             <hr className={`w-full border-black mt-[40px]`} />
+            <ParticlesBg
+                type="cobweb"
+                num={100}
+                bg={true} 
+                size={10} 
+                speed={3}
+            />
         </>
     )
     }

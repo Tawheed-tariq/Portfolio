@@ -14,7 +14,7 @@ export default function NavBar(){
                 <div className={`flex w-[50%] md:w-[40%] justify-between`}>
                     {
                         navLinks.map((link) => (
-                            <a className={`text-[12px] cursor-pointer link`} key={link.id}>
+                            <a className={`text-[12px] cursor-pointer link`} href={`#${link.id}`} key={link.id}>
                                 {link.title}
                             </a>
                         ))
@@ -52,10 +52,10 @@ export default function NavBar(){
                     onClick={() => setToggle((prev) => !prev)}
                 />
 
-                <div className={`${toggle? 'flex' : 'hidden'} gap-[15px] z-[999] backdrop-blur-sm p-6 slide-up absolute top-20 right-0 flex-col mx-4 my-2 min-w-[100px] rounded-xl justify-between`}>
+                <div className={`${toggle? 'flex' : 'hidden'} gap-[15px] z-[999] shadow backdrop-blur-sm p-6 slide-up absolute top-20 right-0 flex-col mx-4 my-2 min-w-[100px] rounded-xl justify-between`}>
                     {
                         navLinks.map((link) => (
-                            <a className={`text-[16px] font-medium text-txt cursor-pointer link`} key={link.id}>
+                            <a className={`text-[16px] font-medium text-txt cursor-pointer link`} href={`#${link.id}`} key={link.id}>
                                 {link.title}
                             </a>
                         ))

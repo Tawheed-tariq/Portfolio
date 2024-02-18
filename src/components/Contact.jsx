@@ -1,8 +1,8 @@
 export default function Contact(){
     return(
-        <div className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
-            <h1 className={`text-2xl font-bold text-txt`}>Contact</h1>
-            <div className={`flex`}>
+        <div id="contact" className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
+            <h1 className={`text-2xl text-center font-bold text-txt`}>Contact</h1>
+            <div className={`flex justify-center `}>
                 <div className={` shadow w-full max-w-[600px] px-[20px] py-[10px] mt-[20px] rounded-2xl`}>
                     <h1 className={`text-2xl font-bold `}><span className="decorate-text">Email Me</span></h1>
                     <form className={`flex flex-col gap-[10px] mt-[20px]`} action="">

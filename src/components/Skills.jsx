@@ -5,8 +5,8 @@ export default function Skils(){
 
     return(
         <>
-            <div className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
-                <h1 className={`text-2xl font-bold text-txt`}>Skills</h1>
+            <div id='skill' className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
+                <h1 className={`text-2xl text-center font-bold text-txt`}>Skills</h1>
                 {
                     skills.map((skill) => (
                         <div key={skill.id} className={`flex gap-[15px] my-[15px] mx-[20px]`}>
