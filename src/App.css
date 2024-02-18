@@ -20,7 +20,6 @@ body{
 .link{
     transition: color 0.5s ;
 }
-
 .link:hover{
     color: rgba(9, 151, 124, 0.7);
 }

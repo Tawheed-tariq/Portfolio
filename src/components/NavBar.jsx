@@ -14,7 +14,7 @@ export default function NavBar(){
                     ))
                 }
             </div>
-            <div className={`flex justify-between gap-[12px] items-center`}>
+            <div className={`flex w-[20%] justify-between gap-[12px] items-center`}>
                 {
                     contactLinks.map((item) => (
                         <a href={item.url} key={item.id} className='cursor-pointer' >
