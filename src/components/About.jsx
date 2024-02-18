@@ -44,13 +44,10 @@ export default function About(){
                 </div>
                 <ParticlesBg
                     type="cobweb"
-                    md:num={200}
-                    num={70}
+                    num={100}
                     bg={true} 
                     size={10} 
                     speed={3}
-                    hoverEffect={true} 
-                    hoverMode="repulse"
                 />
             </div>
             <hr className={`w-full border-black mt-[40px]`} />
