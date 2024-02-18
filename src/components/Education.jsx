@@ -3,7 +3,7 @@ import Card from './Card'
 export default function Education(){
     return(
         <>
-            <div className={`w-full py-[40px] px-[20px] md:px-[250px]`}>
+            <div className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
                 <h1 className={`text-2xl font-bold text-txt`}>Education </h1>
 
                 {

@@ -23,7 +23,7 @@ export default function About(){
                 </div>
 
                 {/* connect with me */}
-                <div className={`w-[80%] mx-auto pt-[50px]`}>
+                <div className={`w-[80%] my-[20px] mx-auto pt-[50px]`}>
                     <h1 className={`text-2xl font-semibold text-txt`}>Connect with me</h1>
                     <div className={`flex justify-between items-center w-[200px] py-[20px] px-[15px]`}>
                         {

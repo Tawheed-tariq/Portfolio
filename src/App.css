@@ -30,3 +30,36 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+
+/* vertical line */
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #2f363e;
+	left: calc(50% - 1px);
+}
+
+
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 10px);
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 10px);
+}
+
+
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #eaa023;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}

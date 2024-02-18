@@ -1,10 +1,10 @@
 export default function Card({title, Desc, from, to, img_url, grade}){
     return(
-        <div className={`border-[1px] border-black w-[750px] p-[15px] m-[20px] rounded-xl flex gap-[15px] `}>
+        <div className={`border-[1px] border-black max-w-[800px] p-[15px] m-[20px] rounded-xl flex gap-[15px] `}>
             <div className="w-[40px]">
                 <img src={img_url} className={`w-[35px] h-[35px]`} />
             </div>
-            <div className={`w-[650px]`}>
+            <div className={`w-[90%]`}>
                 <h1 className={`text-2xl font-semibold text-txt mb-[10px]`}>{title}</h1>
                 <p className={`text-sm text-txt`}>{Desc}</p>
                 <div>
