@@ -86,7 +86,7 @@ export default function About(){
                     </button>
                 </div>
                 <motion.div
-                    className={`pointer-events-none w-[32px] h-[32px] bg-transparent border-[#111] border-4 z-[999] rounded-full fixed top-0 left-0 `}
+                    className={`pointer-events-none w-[32px] hidden md:block h-[32px] bg-transparent border-[#111] border-4 z-[999] rounded-full fixed top-0 left-0 `}
                     variants={variants}
                     animate={cursorVariant}
                 />
