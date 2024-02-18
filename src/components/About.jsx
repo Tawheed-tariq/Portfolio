@@ -1,14 +1,57 @@
 import { contactLinks } from "../constants"
 import ParticlesBg from 'particles-bg' //using particles-bg because react-particles-js is not working
 import Typewriter from "./Typewriter";
+import { useEffect, useState } from "react";
+import {motion} from 'framer-motion'
 export default function About(){
     const texts = ["Full-stack Developer", "Web Scraper"];
+
+    const [mousePos , setMousePos] = useState({
+        x: 0,
+        y: 0
+    })
+
+    const [cursorVariant , setCursorVariant] = useState("default")
+
+    const textEnter = () => setCursorVariant("text")
+    const textLeave = () => setCursorVariant("default")
+
+    useEffect(() => {
+        const mouseMove = (event) => {
+            setMousePos({
+                x : event.clientX,
+                y: event.clientY
+            })
+        }
+
+        window.addEventListener("mousemove", mouseMove)
+
+        return () => {
+            window.removeEventListener("mousemove", mouseMove)
+        }
+    })
+
+    const variants = {
+        default: {
+            x : mousePos.x - 16,
+            y : mousePos.y -16
+        },
+        text: {
+            x : mousePos.x - 30,
+            y : mousePos.y -30,
+            height: 60,
+            width: 60,
+            backgroundColor: "#F8FDF9",
+            mixBlendMode: "difference"
+        }
+    }
+
     return(
         <>
             <div id="about" className={`w-full min-h-[90vh] px-[20px] xl:px-[250px]`}>
                 {/* About me */}
                 <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[100px] md:pt-[150px]`}>
-                    <h1 className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
+                    <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
                     <Typewriter texts={texts}/>
 
                     <p className={`text-md md:text-lg text-txt md:w-[80%]`}>
@@ -42,6 +85,11 @@ export default function About(){
                         Check Resume
                     </button>
                 </div>
+                <motion.div
+                    className={`pointer-events-none w-[32px] h-[32px] bg-transparent border-[#111] border-4 z-[999] rounded-full fixed top-0 left-0 `}
+                    variants={variants}
+                    animate={cursorVariant}
+                />
             </div>
             <hr className={`w-full border-black mt-[40px]`} />
             <ParticlesBg
@@ -51,6 +99,7 @@ export default function About(){
                 size={10} 
                 speed={3}
             />
+            
         </>
     )
     }
