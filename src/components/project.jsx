@@ -29,8 +29,8 @@ export default function Project({title, desc, img, skillArr}){
 
 const Icon = ({skill}) => {
     return (
-        <div className={`flex h-[25px] shadow md:h-[35px] rounded-[20px] md:rounded-[23px] items-center justify-between px-[15px] gap-[7px]`}>
-            <p className="text-txt text-sm md:text-md">
+        <div className={`flex h-[25px]  shadow md:h-[35px] rounded-[20px] md:rounded-[23px] items-center justify-between px-[15px] gap-[7px]`}>
+            <p className="text-txt text-[10px] sm:text-sm md:text-md">
                 {skill}
             </p>
         </div>

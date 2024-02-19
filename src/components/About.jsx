@@ -99,7 +99,6 @@ export default function About(){
                 size={10} 
                 speed={3}
             />
-            
         </>
     )
-    }
+}

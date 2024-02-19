@@ -211,7 +211,7 @@ export const projects = [
         id: "4",
         title : "Google maps Scraper",
         desc: "Developed a web scraping and automation project named Google Maps Scraper. Extracts name, address, website URL, and phone number from specified searches on Google Maps. Outputs data into an Excel sheet for easy analysis. Streamlines information retrieval process, enhancing efficiency in data gathering tasks.",
-        skills_used: [" Python", "Pandas", "argparse", "playwright", "web-scraping"],
+        skills_used: [" Python", "Pandas", "Argparse", "Playwright", "Web Scraping"],
         img: "map.png"
     },
 ]
