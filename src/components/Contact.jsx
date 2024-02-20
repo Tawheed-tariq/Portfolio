@@ -1,9 +1,17 @@
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
+
+
 export default function Contact(){
+    useEffect(()=>{
+        AOS.init({duration:900, anchorPlacement:"top-center"}),[]
+    })
     return(
         <div id="contact" className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
             <h1 className={`text-2xl md:text-3xl text-center font-bold`}> <span className="heading">Contact</span> </h1>
             <div className={`flex justify-center `}>
-                <div className={` shadow w-full max-w-[600px] px-[20px] py-[10px] mt-[20px] rounded-2xl`}>
+                <div data-aos="fade-up" className={` shadow w-full max-w-[600px] px-[20px] py-[10px] mt-[20px] rounded-2xl`}>
                     <h1 className={`text-2xl font-bold `}><span className="decorate-text">Email Me</span></h1>
                     <form className={`flex flex-col gap-[10px] mt-[20px]`} action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="8e4c16d9-1973-47d8-8536-95284d4bfa7e"/>

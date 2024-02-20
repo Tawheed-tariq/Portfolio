@@ -1,5 +1,8 @@
 import Card from "./Card";
 import { experience } from "../constants";
+
+
+
 export default function Experience(){
     return(
         <>
@@ -8,7 +11,7 @@ export default function Experience(){
 
                 <div className={`timeline-items flex flex-wrap relative max-w-[100%]`}>
                     {
-                        experience.map((item) => (
+                        experience.map((item,index) => (
                             <div key={item.id} className={`timeline-item mb-[10px] md:mb-[40px] w-[100%] relative`}>
                                 <div className="timeline-dot"></div>
                                 <Card
@@ -17,6 +20,7 @@ export default function Experience(){
                                     Desc={item.desc}
                                     from={item.strt}
                                     to={item.end}
+                                    index={index}
                                 />
                             </div>
                         ))
