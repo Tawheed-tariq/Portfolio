@@ -151,6 +151,24 @@ export const backend_skills = [
     }
 ]
 
+export const skills = [
+    {
+        id: "1",
+        name: "Frontend",
+        arrName: frontend_skills
+    },
+    {
+        id: "2",
+        name: "Backend",
+        arrName: backend_skills
+    },
+    {
+        id: "3",
+        name: "Tools",
+        arrName: tools
+    }
+]
+
 export const tools = [
     {
         id: "1",
@@ -228,20 +246,3 @@ export const projects = [
     },
 ]
 
-export const skills = [
-    {
-        id: "1",
-        name: "Frontend",
-        arrName: frontend_skills
-    },
-    {
-        id: "2",
-        name: "Backend",
-        arrName: backend_skills
-    },
-    {
-        id: "3",
-        name: "Tools",
-        arrName: tools
-    }
-]

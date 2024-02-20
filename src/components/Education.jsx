@@ -7,7 +7,7 @@ export default function Education(){
                 <h1 className={`text-2xl text-center mb-[20px] font-bold md:text-3xl`}><span className="heading">Education</span>  </h1>
 
                 {
-                    education.map((item) => (
+                    education.map((item, index) => (
                         <div key={item.id}>
                             <Card
                                 img_url={item.icon}
@@ -16,6 +16,7 @@ export default function Education(){
                                 from={item.strt}
                                 to={item.end}
                                 grade={item.grade}
+                                index={index}
                             />
                         </div>
                     ))

@@ -1,6 +1,15 @@
+import { useEffect } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
+
+
+
 export default function Project({title, desc, img, skillArr, url}){
+    useEffect(()=>{
+        AOS.init({duration:900, anchorPlacement:"top-center"}),[]
+    })
     return(
-            <div className={` shadow  max-w-[500px] p-[15px] mx-[20px] my-[10px] rounded-2xl `}>
+            <div data-aos="flip-up" className={` shadow  max-w-[500px] p-[15px] mx-[20px] my-[10px] rounded-2xl `}>
                 <a target="_blank" href={url}>
                     <div className="flex gap-[15px]">
                         <div className="w-[40px]">
