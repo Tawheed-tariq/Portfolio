@@ -3,7 +3,18 @@ import ParticlesBg from 'particles-bg' //using particles-bg because react-partic
 import Typewriter from "./Typewriter";
 import { useEffect, useState } from "react";
 import {motion} from 'framer-motion'
+import AOS from "aos"
+import "aos/dist/aos.css"
+
+
+
+
 export default function About(){
+    useEffect(()=>{
+        AOS.init({duration:900, anchorPlacement:"top-center"}),[]
+    })
+
+
     const texts = ["Full-stack Developer", "Web Scraper"];
 
     const [mousePos , setMousePos] = useState({
@@ -51,10 +62,10 @@ export default function About(){
             <div id="about" className={`w-full min-h-[90vh] px-[20px] xl:px-[250px]`}>
                 {/* About me */}
                 <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[100px] md:pt-[150px]`}>
-                    <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
-                    <Typewriter texts={texts}/>
+                    <h1 data-aos="zoom-in-down" onMouseEnter={textEnter} onMouseLeave={textLeave} className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
+                    <div data-aos="zoom-in"><Typewriter texts={texts}/></div>
 
-                    <p className={`text-md md:text-lg text-txt md:w-[80%]`}>
+                    <p data-aos="fade-up" className={`text-md md:text-lg text-txt md:w-[80%]`}>
                         Dedicated and innovative B.Tech student majoring in Information Technology
                          at NIT Srinagar, deeply passionate about exploring the intersections of 
                          technology and human experience. With a solid foundation in web development 
@@ -66,7 +77,7 @@ export default function About(){
                 </div>
 
                 {/* connect with me */}
-                <div className={`md:w-[80%] my-[20px] mx-auto pt-[50px]`}>
+                <div data-aos="fade-right" className={`md:w-[80%] my-[20px] mx-auto pt-[50px]`}>
                     <h1 className={`text-xl md:text-2xl font-semibold text-txt`}>Connect with me</h1>
                     <div className={`flex justify-between items-center w-[150px] md:w-[200px] py-[20px] px-[15px]`}>
                         {
@@ -82,7 +93,7 @@ export default function About(){
                 {/* resume button */}
                 <div className={`w-full flex justify-center`}>
                     <a target="_blank" href="Resume.pdf">
-                        <button className={`w-[200px] shadow bg-transparent backdrop-blur-sm mt-[20px] font-medium decorate-text text-xl cursor-pointer h-[55px] rounded-full `}>
+                        <button data-aos="zoom-in-up" className={`w-[200px] shadow bg-transparent backdrop-blur-sm mt-[20px] font-medium decorate-text text-xl cursor-pointer h-[55px] rounded-full `}>
                             Check Resume
                         </button>
                     </a>
