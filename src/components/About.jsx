@@ -81,9 +81,11 @@ export default function About(){
 
                 {/* resume button */}
                 <div className={`w-full flex justify-center`}>
-                    <button className={`w-[200px] shadow bg-transparent backdrop-blur-sm mt-[20px] font-medium decorate-text text-xl cursor-pointer h-[55px] rounded-full `}>
-                        Check Resume
-                    </button>
+                    <a target="_blank" href="Resume.pdf">
+                        <button className={`w-[200px] shadow bg-transparent backdrop-blur-sm mt-[20px] font-medium decorate-text text-xl cursor-pointer h-[55px] rounded-full `}>
+                            Check Resume
+                        </button>
+                    </a>
                 </div>
                 <motion.div
                     className={`pointer-events-none w-[32px] hidden md:block h-[32px] bg-transparent border-[#111] border-4 z-[999] rounded-full fixed top-0 left-0 `}

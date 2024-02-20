@@ -30,6 +30,13 @@ body{
     -webkit-background-clip: text;
 }
 
+.heading{
+  background: linear-gradient(to right, #B014A1, #19DACE);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 .linearBG{
   background: linear-gradient(to right, #45ce53,#4f45a5);
   cursor: pointer;

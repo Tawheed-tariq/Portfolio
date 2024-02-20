@@ -30,9 +30,11 @@ export default function NavBar(){
                             </a>
                         ))
                     }
-                    <button className={`w-[100px] text-txt cursor-pointer h-[35px] border-[1px] rounded-[20px] border-black`}>
-                        Resume
-                    </button>
+                    <a target='_blank' href="Resume.pdf">
+                        <button className={`w-[100px] text-txt cursor-pointer h-[35px] border-[1px] rounded-[20px] border-black`}>
+                            Resume
+                        </button>
+                    </a>
                 </div>
             </div>
 

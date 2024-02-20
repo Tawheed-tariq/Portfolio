@@ -39,7 +39,7 @@ export const contactLinks = [
     },
     {
         id: "3",
-        url: "",
+        url: "mailto:tawheedtariq090@gmail.com",
         icon: 'gmail.png'
     }
 ]

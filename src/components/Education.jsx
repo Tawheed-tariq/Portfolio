@@ -4,7 +4,7 @@ export default function Education(){
     return(
         <>
             <div id="edu" className={`w-full py-[40px] flex flex-col justify-center items-center  px-[20px] md:px-[150px]`}>
-                <h1 className={`text-2xl text-center mb-[20px] font-bold text-txt`}>Education </h1>
+                <h1 className={`text-2xl text-center mb-[20px] font-bold md:text-3xl`}><span className="heading">Education</span>  </h1>
 
                 {
                     education.map((item) => (
