@@ -15,7 +15,6 @@ export default function Skils(){
                     ))
                 }
             </div>
-            {/* <hr className={`w-full border-black mb-[10px]`} /> */}
         </>
     )
 }

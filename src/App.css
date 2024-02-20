@@ -23,6 +23,11 @@ body{
     transition: color 0.5s ;
 }
 
+.link:hover{
+  /* color: #0f5c57; */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
 .decorate-text{
     background: linear-gradient(to right, #45CE52, #4C729F,#4F45A5);
     -webkit-text-fill-color: transparent;
@@ -115,7 +120,8 @@ body{
       transform: translateY(0);
       filter: blur(0);
     }
-}
+}     
+
 
 
 .shadow{

@@ -23,7 +23,6 @@ export default function Experience(){
                     }
                 </div>
             </div>
-            {/* <hr className={`w-full border-black mb-[10px]`} /> */}
         </>
     )
 }

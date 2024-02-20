@@ -11,10 +11,10 @@ export default function NavBar(){
                 </div>
 
 
-                <div className={`flex w-[50%] md:w-[40%] justify-between`}>
+                <div className={`flex w-[50%] md:w-[40%] items-center justify-between`}>
                     {
                         navLinks.map((link) => (
-                            <a className={`text-[12px] cursor-pointer link`} href={`#${link.id}`} key={link.id}>
+                            <a className={`text-[14px] cursor-pointer link`} href={`#${link.id}`} key={link.id}>
                                 {link.title}
                             </a>
                         ))
