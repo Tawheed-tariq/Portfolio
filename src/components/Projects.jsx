@@ -7,7 +7,14 @@ export default function Projects(){
             <div className='w-full flex flex-wrap justify-center'>
                 {
                     projects.map((item) => (
-                        <Project key={item.id} title={item.title} desc={item.desc} img={item.img} skillArr={item.skills_used}/>
+                        <Project 
+                            key={item.id} 
+                            title={item.title} 
+                            desc={item.desc} 
+                            img={item.img} 
+                            skillArr={item.skills_used}
+                            url={item.url}
+                        />
                     ))
                 }
             </div>
