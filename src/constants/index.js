@@ -191,28 +191,40 @@ export const projects = [
         title : "Car Racing Game",
         desc: "Created an engaging racing game using HTML, CSS, and JavaScript. Demonstrates frontend development skills with dynamic visuals and responsive controls. Showcases creativity and problem-solving in delivering an immersive gaming experience, emphasizing adaptability and innovation in web development.",
         skills_used: ["HTML", "CSS", "JavaScript"],
-        img: "sport-car.png"
+        img: "sport-car.png",
+        url: ""
     },
     {
         id: "2",
         title : "Crypto Dashboard",
         desc: "Developed a sleek and intuitive frontend for a cryptocurrency dashboard using HTML, CSS, JavaScript,Figma, Chakra UI, and ReactJS. Seamlessly integrated Chakra UI components for enhanced UI design and responsiveness. Implemented real-time data updates and interactive charts using ReactJS libraries. The dashboard provides comprehensive insights into cryptocurrency market trends, portfolio performance, and transaction history.",
         skills_used: ["HTML", "CSS", "JavaScript", "React.js", "ChakraUI", "Figma"],
-        img: "cryptocurrency.png"
+        img: "cryptocurrency.png",
+        url: ""
     },
     {
         id: "3",
         title : "Chat App",
         desc: "Built a real-time chat application using MERN stack (MongoDB, Express.js, React.js, Node.js, Figma), HTML, CSS, and Chakra UI. Enables users to send messages to each other in real-time. Demonstrates proficiency in frontend and backend technologies, facilitating seamless communication and collaboration in a dynamic web environment.",
         skills_used: ["HTML", "CSS", "JavaScript","React.js", "ChakraUI","Node.js", "Express.js", "MongoDB", "Figma"],
-        img: "chat.png"
+        img: "chat.png",
+        url: ""
     },
     {
         id: "4",
         title : "Google maps Scraper",
         desc: "Developed a web scraping and automation project named Google Maps Scraper. Extracts name, address, website URL, and phone number from specified searches on Google Maps. Outputs data into an Excel sheet for easy analysis. Streamlines information retrieval process, enhancing efficiency in data gathering tasks.",
-        skills_used: [" Python", "Pandas", "Argparse", "Playwright", "Web Scraping"],
-        img: "map.png"
+        skills_used: [" Python", "Pandas", "Argparse", "Playwright", "Web Scraping", "Automation"],
+        img: "map.png",
+        url: ""
+    },
+    {
+        id: "5",
+        title : "Crypto Scraper",
+        desc: "CryptoScraper extracts real-time cryptocurrency data using Playwright and Scrapy, storing it in MongoDB. It automates web scraping, handles JavaScript content, and ensures data integrity. The tool aids analysis and decision-making for cryptocurrency enthusiasts, traders, and analysts.",
+        skills_used: [" Python", "Scrapy", "Scrapy-playwright", "mongoDB", "Web Scraping", "Automation"],
+        img: "bitcoin.png",
+        url: ""
     },
 ]
 

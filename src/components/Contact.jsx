@@ -13,8 +13,6 @@ export default function Contact(){
                         <button className={`w-full shadow text-xl linearBG px-[20px] font-medium text-white py-[10px] rounded-full`} type="submit">Send</button>
                     </form>
                 </div>
-
-                <div className="w-full hidden md:block"></div>
             </div>
         </div>
     )
