@@ -182,6 +182,11 @@ export const tools = [
         id: "6",
         icon: "figma.png",
         title: "Figma"
+    },
+    {
+        id: "7",
+        icon: "postman.png",
+        title: "Postman"
     }
 ]
 
