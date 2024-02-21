@@ -65,7 +65,7 @@ export default function About(){
                     <h1 data-aos="zoom-in-down" onMouseEnter={textEnter} onMouseLeave={textLeave} className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
                     <div data-aos="zoom-in"><Typewriter texts={texts}/></div>
 
-                    <p data-aos="fade-up" className={`text-md md:text-lg text-txt md:w-[80%]`}>
+                    <p data-aos="fade-up" className={`text-sm md:text-lg text-txt md:w-[80%]`}>
                         Dedicated and innovative B.Tech student majoring in Information Technology
                          at NIT Srinagar, deeply passionate about exploring the intersections of 
                          technology and human experience. With a solid foundation in web development 
@@ -93,7 +93,7 @@ export default function About(){
                 {/* resume button */}
                 <div className={`w-full flex justify-center`}>
                     <a target="_blank" href="Resume.pdf">
-                        <button data-aos="zoom-in-up" className={`w-[200px] shadow bg-transparent backdrop-blur-sm mt-[20px] font-medium decorate-text text-xl cursor-pointer h-[55px] rounded-full `}>
+                        <button data-aos="zoom-in-up" className={`w-[200px] shadow bg-transparent border-[3px] border-black backdrop-blur-md mt-[20px] font-semibold decorate-text text-xl cursor-pointer h-[55px] rounded-full `}>
                             Check Resume
                         </button>
                     </a>
