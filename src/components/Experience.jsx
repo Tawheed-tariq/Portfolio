@@ -6,7 +6,7 @@ import { experience } from "../constants";
 export default function Experience(){
     return(
         <>
-            <div id="exp" className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
+            <div id="exp" className={`w-full py-[40px] px-[20px] xl:px-[150px]`}>
                 <h1 className={`text-2xl  text-center mb-[20px] font-bold md:text-3xl`}><span className="heading">Experience</span>  </h1>
 
                 <div className={`timeline-items flex flex-wrap relative max-w-[100%]`}>
