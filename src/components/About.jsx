@@ -57,6 +57,15 @@ export default function About(){
         }
     }
 
+    //number of particles for cobweb
+    let numberOfParticles = 150
+
+    if(window.innerWidth < 786){
+        numberOfParticles = 50
+    }else if(window.innerWidth < 1024){
+        numberOfParticles = 100
+    }
+
     return(
         <>
             <div id="about" className={`w-full min-h-[90vh] px-[20px] xl:px-[250px]`}>
@@ -107,7 +116,7 @@ export default function About(){
             <hr className={`w-full border-black mt-[40px]`} />
             <ParticlesBg
                 type="cobweb"
-                num={100}
+                num={numberOfParticles}
                 bg={true} 
                 size={10} 
                 speed={3}
