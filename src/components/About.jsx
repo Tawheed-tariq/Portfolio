@@ -74,7 +74,7 @@ export default function About(){
                     <h1 data-aos="zoom-in-down" onMouseEnter={textEnter} onMouseLeave={textLeave} className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
                     <div data-aos="zoom-in"><Typewriter texts={texts}/></div>
 
-                    <p data-aos="fade-up" className={`text-sm md:text-lg text-txt md:w-[80%]`}>
+                    <p data-aos="fade-up" className={`text-sm md:text-lg text-center text-txt md:w-[80%]`}>
                         Dedicated and innovative B.Tech student majoring in Information Technology
                          at NIT Srinagar, deeply passionate about exploring the intersections of 
                          technology and human experience. With a solid foundation in web development 
