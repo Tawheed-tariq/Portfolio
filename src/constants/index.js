@@ -109,6 +109,11 @@ export const frontend_skills = [
         id: "5",
         icon: "reactjs.png",
         title: "React.JS"
+    },
+    {
+        id: "6",
+        icon: "redux.svg",
+        title: "Redux"
     }
 ]
 
