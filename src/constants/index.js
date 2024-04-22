@@ -243,7 +243,7 @@ export const projects = [
         id: "4",
         title : "Google maps Scraper",
         desc: "Developed a web scraping and automation project named Google Maps Scraper. Extracts name, address, website URL, and phone number from specified searches on Google Maps. Outputs data into an Excel sheet for easy analysis. Streamlines information retrieval process, enhancing efficiency in data gathering tasks.",
-        skills_used: [" Python", "Pandas", "Argparse", "Playwright", "Web Scraping", "Automation"],
+        skills_used: ["Python", "Pandas", "Argparse", "Playwright", "Web Scraping", "Automation"],
         img: "map.png",
         url: "https://github.com/Tawheed-tariq/google-maps-scrapper"
     },
@@ -251,9 +251,17 @@ export const projects = [
         id: "5",
         title : "Crypto Scraper",
         desc: "CryptoScraper extracts real-time cryptocurrency data using Playwright and Scrapy, storing it in MongoDB. It automates web scraping, handles JavaScript content, and ensures data integrity. The tool aids analysis and decision-making for cryptocurrency enthusiasts, traders, and analysts.",
-        skills_used: [" Python", "Scrapy", "Scrapy-playwright", "mongoDB", "Web Scraping", "Automation"],
+        skills_used: ["Python", "Scrapy", "Scrapy-playwright", "mongoDB", "Web Scraping", "Automation"],
         img: "bitcoin.png",
         url: "https://github.com/Tawheed-tariq/crypto-scrapper"
+    },
+    {
+        id: "6",
+        title : "WP-Scanner",
+        desc: "A dynamic web application crafted with React and Flask, meticulously designed for penetration testing endeavors. With a fusion of frontend elegance and backend robustness, CyberGuard empowers cybersecurity professionals to conduct comprehensive assessments with precision, efficiency, and unparalleled security measures.",
+        skills_used: ["Python", "flask", "ReactJS", "mongoDB", "HTML", "CSS3", "Tailwind CSS", "Javascript", "Figma"],
+        img: "scanner.png",
+        url: "https://github.com/Tawheed-tariq/WP-Scanner"
     },
 ]
 
