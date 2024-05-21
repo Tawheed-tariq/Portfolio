@@ -9,6 +9,11 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "author": "Except me",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.19.1"
+  },
   "dependencies": {
     "aos": "^2.3.4",
     "framer-motion": "^11.0.5",
