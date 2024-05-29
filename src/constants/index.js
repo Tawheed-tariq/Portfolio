@@ -68,10 +68,10 @@ export const education = [
         id: "1",
         icon : "NIT.png",
         title: "National Institute of technology Srinagar",
-        desc: "Currently in my fourth semester, I am pursuing a Bachelor of Technology (B.Tech) degree in Information Technology at NIT Srinagar. With a cumulative grade point average (CGPA) of 9.0, I have demonstrated strong academic performance and dedication to my studies.Developed a solid understanding of fundamental data structures and algorithms, enabling me to efficiently solve complex problems and optimize code.",
+        desc: "Currently in my fourth semester, I am pursuing a Bachelor of Technology (B.Tech) degree in Information Technology at NIT Srinagar. With a cumulative grade point average (CGPA) of 9.04, I have demonstrated strong academic performance and dedication to my studies.Developed a solid understanding of fundamental data structures and algorithms, enabling me to efficiently solve complex problems and optimize code.",
         strt: "Nov 2022",
         end: "Present",
-        grade: "9 CGPA"
+        grade: "9.04 CGPA"
     },
     {
         id: "2",
@@ -153,6 +153,26 @@ export const backend_skills = [
         id: "7",
         icon: "firebase.png",
         title: "Firebase"
+    },
+    {
+        id: "8",
+        icon: "redis.svg",
+        title: "Redis"
+    },
+    {
+        id: "9",
+        icon: "mysql.svg",
+        title: "MySQL"
+    },
+    {
+        id: "10",
+        icon: "sqlite.svg",
+        title: "SQLite"
+    },
+    {
+        id: "11",
+        icon: "flask.svg",
+        title: "Flask"
     }
 ]
 
@@ -192,6 +212,11 @@ export const tools = [
         id: "7",
         icon: "postman.png",
         title: "Postman"
+    },
+    {
+        id: "8",
+        icon: "docker.svg",
+        title: "Docker"
     }
 ]
 
