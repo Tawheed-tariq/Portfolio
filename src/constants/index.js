@@ -102,16 +102,26 @@ export const frontend_skills = [
     },
     {
         id: "4",
+        icon: "jquery.svg",
+        title: "JQuery"
+    },
+    {
+        id: "5",
+        icon: "sass.svg",
+        title: "SASS"
+    },
+    {
+        id: "6",
         icon: "tailwind css.png",
         title: "Tailwind CSS"
     },
     {
-        id: "5",
+        id: "7",
         icon: "reactjs.png",
         title: "React.JS"
     },
     {
-        id: "6",
+        id: "8",
         icon: "redux.svg",
         title: "Redux"
     }
