@@ -4,7 +4,7 @@ export default function Projects(){
     return(
         <div id="project" className={`w-full flex flex-col justify-center px-[20px] lg:px-[150px]`}>
             <h1 className={`text-2xl text-center mb-[20px]  font-bold md:text-3xl`}><span className="heading">Projects</span>  </h1>
-            <div className='w-full flex flex-wrap justify-center'>
+            <div className='w-full flex flex-wrap gap-6 justify-center'>
                 {
                     projects.map((item) => (
                         <Project 

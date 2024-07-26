@@ -1,51 +1,41 @@
-import { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
 
+export default function Project({ title, desc, img, skillArr, url }) {
 
+  const nameShortner = (string, maxlength) => {
+    if (string.length > maxlength)
+      return string.substring(0, maxlength) + "...";
+  };
+  return (
+    <div
+      className={`shadow rounded-md max-w-96 p-6 `}
+    >
+      <a target="_blank" href={url}>
+        <div className="flex flex-col gap-[15px]">
+          <div className="flex items-center gap-5">
+            <img src={img} className={`w-8 h-8 `} />
+            <h1 className={`text-xl md:text-2xl font-semibold text-txt `}>
+              {title}
+            </h1>
+          </div>
+          <p className={`text-xs md:text-sm text-txt`}>{nameShortner(desc, 100)}</p>
 
-export default function Project({title, desc, img, skillArr, url}){
-    useEffect(()=>{
-        AOS.init({duration:900, anchorPlacement:"top-center"}),[]
-    })
-    return(
-            <div data-aos="flip-up" className={` shadow  max-w-[500px] p-[15px] mx-[20px] my-[10px] rounded-2xl `}>
-                <a target="_blank" href={url}>
-                    <div className="flex gap-[15px]">
-                        <div className="w-[40px]">
-                            <img src={img} className={`w-[35px] h-[35px] mt-[10px]`} />
-                        </div>
-
-
-                        <div className={`w-[95%]`}>
-                            <h1 className={`text-xl md:text-2xl font-semibold text-txt mb-[10px]`}>{title}</h1>
-                            <p className={`text-xs md:text-sm text-txt`}>
-                                {desc}
-                            </p>
-                            <h1 className={`text-sm md:text-md font-semibold text-txt my-[10px]`}>Skills Used :</h1>
-
-
-                            <div className={`flex flex-wrap gap-[15px] my-[15px] md:mx-[20px]`}>
-                                {
-                                    skillArr.map((skill) => (
-                                        <Icon skill={skill}/>
-                                    ))
-                                }
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-    )
-}
-
-const Icon = ({skill}) => {
-    return (
-        <div className={`flex h-[25px]  shadow md:h-[35px] rounded-[20px] md:rounded-[23px] items-center justify-between px-[15px] gap-[7px]`}>
-            <p className="text-txt text-[10px] sm:text-sm md:text-md">
-                {skill}
-            </p>
+          <div className={`flex flex-wrap gap-2 md:mx-1`}>
+            {skillArr.map((skill) => (
+              <Icon skill={skill} />
+            ))}
+          </div>
         </div>
-    )
+      </a>
+    </div>
+  );
 }
+
+const Icon = ({ skill }) => {
+  return (
+    <div
+      className={`flex h-3 md:h-9 shadow-lg rounded-full items-center justify-between px-5`}
+    >
+      <p className="text-txt text-[10px] sm:text-xs md:text-sm">{skill}</p>
+    </div>
+  );
+};
