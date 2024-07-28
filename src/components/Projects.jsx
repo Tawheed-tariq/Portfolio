@@ -13,7 +13,9 @@ export default function Projects(){
                             desc={item.desc} 
                             img={item.img} 
                             skillArr={item.skills_used}
-                            url={item.url}
+                            giturl={item.giturl}
+                            weburl={item.deployed ? item.weburl : null}
+                            deployed={item.deployed}
                         />
                     ))
                 }

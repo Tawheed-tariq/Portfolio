@@ -294,7 +294,9 @@ export const projects = [
         desc: "Created an engaging desktop-friendly racing game using HTML, CSS, and JavaScript. This project showcases frontend development skills with dynamic visuals and responsive controls. The game features smooth animations, collision detection, and score tracking, providing an immersive gaming experience. It demonstrates proficiency in DOM manipulation, event handling, and game logic implementation. The project highlights creativity in design and problem-solving skills in delivering an interactive web-based application, emphasizing adaptability and innovation in web development.",
         skills_used: ["HTML", "CSS", "JavaScript"],
         img: "sport-car.png",
-        url: "https://tawheed-tariq.github.io/Racing-game/"
+        giturl: "https://github.com/Tawheed-tariq/Racing-game",
+        weburl: "https://tawheed-tariq.github.io/Racing-game/",
+        deployed:true
     },
     {
         id: "6",
@@ -302,7 +304,8 @@ export const projects = [
         desc: "WP-Scanner is a sophisticated web application crafted with React and Flask, meticulously designed for penetration testing of WordPress websites. This tool combines a sleek, user-friendly frontend built with React, Tailwind CSS, and JavaScript, with a robust Python-Flask backend. It enables cybersecurity professionals to conduct comprehensive WordPress vulnerability assessments with precision and efficiency. The application features automated scanning for common WordPress vulnerabilities, plugin and theme analysis, and detailed reporting. MongoDB is utilized for data persistence, allowing for the storage and retrieval of scan results. The project showcases full-stack development skills, API integration, and a deep understanding of web security principles.",
         skills_used: ["Python", "flask", "ReactJS", "mongoDB", "HTML", "CSS3", "Tailwind CSS", "Javascript", "Figma"],
         img: "scanner.png",
-        url: "https://github.com/Tawheed-tariq/WP-Scanner"
+        giturl: "https://github.com/Tawheed-tariq/WP-Scanner",
+        deployed:false
     },
     {
         id: "3",
@@ -310,7 +313,8 @@ export const projects = [
         desc: "Developed a feature-rich, real-time chat application using the MERN stack (MongoDB, Express.js, React.js, Node.js) along with HTML, CSS, and Chakra UI. This full-stack project enables users to send and receive messages in real-time, create group chats, and share media files. The application implements WebSocket technology for instant message delivery and notifications. User authentication and data encryption ensure secure communication. The frontend, designed using Figma and implemented with React and Chakra UI, provides a responsive and intuitive user interface. This project demonstrates proficiency in both frontend and backend technologies, showcasing skills in real-time data handling, state management, and creating scalable web applications.",
         skills_used: ["HTML", "CSS", "JavaScript","React.js", "ChakraUI","Node.js", "Express.js", "MongoDB", "Figma"],
         img: "chat.png",
-        url: "https://github.com/Tawheed-tariq/chat-app"
+        giturl: "https://github.com/Tawheed-tariq/chat-app",
+        deployed:false
     },
     {
         id: "4",
@@ -318,7 +322,8 @@ export const projects = [
         desc: "Developed an advanced web scraping and automation tool named Google Maps Scraper. This Python-based project utilizes Playwright for browser automation and robust web scraping capabilities. It extracts essential business information including name, address, website URL, and phone number from specified searches on Google Maps. The scraper implements intelligent parsing algorithms to handle various data formats and structures. Pandas is used for data manipulation and Excel sheet generation, providing clean and organized output for easy analysis. The project incorporates Argparse for a user-friendly command-line interface, allowing customizable search parameters. This tool significantly streamlines the information retrieval process, enhancing efficiency in data gathering tasks for business intelligence and market research.",
         skills_used: ["Python", "Pandas", "Argparse", "Playwright", "Web Scraping", "Automation"],
         img: "map.png",
-        url: "https://github.com/Tawheed-tariq/google-maps-scrapper"
+        giturl: "https://github.com/Tawheed-tariq/google-maps-scrapper",
+        deployed:false
     },
     {
         id: "2",
@@ -326,7 +331,9 @@ export const projects = [
         desc: "Cryptyd is a sophisticated cryptocurrency dashboard frontend developed using a modern tech stack including HTML, CSS, JavaScript, React.js, and Chakra UI. The project showcases advanced frontend development skills, with a focus on creating a sleek, intuitive user interface designed in Figma. Key features include real-time cryptocurrency price tracking, interactive price charts, portfolio management tools, and detailed asset information. The dashboard leverages React's component-based architecture for efficient state management and reusable UI elements. Chakra UI is utilized for responsive design and consistent styling across the application. Integration with cryptocurrency APIs enables live data updates, providing users with accurate and timely market information. This project demonstrates proficiency in creating complex, data-driven web applications with a polished user experience.",
         skills_used: ["HTML", "CSS", "JavaScript", "React.js", "ChakraUI", "Figma"],
         img: "cryptocurrency.png",
-        url: "https://cryptyd.netlify.app/"
+        giturl: "https://github.com/Tawheed-tariq/cryptyd",
+        weburl: "https://cryptyd.netlify.app/",
+        deployed:true
     },
     {
         id: "5",
@@ -334,7 +341,8 @@ export const projects = [
         desc: "CryptoScraper is an advanced data extraction tool designed to gather real-time cryptocurrency information from various online sources. Utilizing Playwright and Scrapy, this Python-based project automates the process of navigating through JavaScript-heavy websites and extracting relevant data. The scraper is capable of handling dynamic content, bypassing anti-bot measures, and ensuring high-quality data collection. Extracted information, including cryptocurrency prices, market caps, and trading volumes, is stored in MongoDB for efficient data management and analysis. The tool implements robust error handling and retry mechanisms to ensure data integrity and completeness. This project showcases skills in web scraping, automation, and database management, providing valuable insights for cryptocurrency enthusiasts, traders, and analysts.",
         skills_used: ["Python", "Scrapy", "Scrapy-playwright", "mongoDB", "Web Scraping", "Automation"],
         img: "bitcoin.png",
-        url: "https://github.com/Tawheed-tariq/crypto-scrapper"
+        giturl: "https://github.com/Tawheed-tariq/crypto-scrapper",
+        deployed:false
     },
     {
         id: "7",
@@ -342,7 +350,8 @@ export const projects = [
         desc: "The Dog VS Cat Classifier is a sophisticated machine learning project that employs deep learning techniques to distinguish between images of dogs and cats with high accuracy. Built using TensorFlow and Scikit-learn, this project implements a convolutional neural network (CNN) architecture optimized for image classification tasks. The model is trained on a large dataset of labeled dog and cat images, enabling it to learn complex features and patterns. Numpy is utilized for efficient numerical computations and data preprocessing. The project includes data augmentation techniques to improve model generalization and prevent overfitting. Matplotlib is used to visualize the training process, model performance metrics, and sample predictions. This classifier demonstrates proficiency in building and deploying state-of-the-art image classification models, showcasing skills essential for computer vision applications in fields such as pet recognition, animal monitoring, and automated image tagging.",
         skills_used: ["Tensorflow", "Scikit-learn", "Numpy", "Matplotlib"],
         img: "img-classifier.png",
-        url: "https://github.com/Tawheed-tariq/dog-vs-cat/blob/main/dog_vs_cat.ipynb"
+        giturl: "https://github.com/Tawheed-tariq/dog-vs-cat/blob/main/dog_vs_cat.ipynb",
+        deployed:false
     },
     {
         id: "8",
@@ -350,7 +359,8 @@ export const projects = [
         desc: "The MAGIC Gamma Telescope project is a machine learning application focused on classifying astronomical events detected by the MAGIC (Major Atmospheric Gamma Imaging Cherenkov) telescope. This project utilizes Scikit-learn for implementing various classification algorithms to distinguish between gamma ray signals and background noise. Numpy and Pandas are employed for efficient data manipulation and preprocessing of the telescope's complex datasets. The project involves feature engineering, model selection, and hyperparameter tuning to achieve optimal classification performance. Matplotlib is used to create insightful visualizations of the data distribution, feature importance, and model performance metrics. This work demonstrates skills in handling imbalanced datasets, applying machine learning to physics problems, and interpreting results in the context of astrophysics research.",
         skills_used: ["Scikit-learn", "Numpy", "Matplotlib", "Pandas"],
         img: "telescope.png",
-        url: "https://github.com/Tawheed-tariq/magic-gamma-telescope/blob/main/main.ipynb"
+        giturl: "https://github.com/Tawheed-tariq/magic-gamma-telescope/blob/main/main.ipynb",
+        deployed:false
     },
     {
         id: "9",
@@ -358,7 +368,8 @@ export const projects = [
         desc: "The IMDB Movie Review project is a natural language processing (NLP) application that performs sentiment analysis on movie reviews. Utilizing TensorFlow and Keras, this project implements a deep learning model to classify movie reviews as positive or negative. The model architecture includes embedding layers and recurrent neural networks (RNNs) or long short-term memory (LSTM) networks to capture the sequential nature of text data. Numpy is used for efficient numerical computations and data preprocessing. The project showcases text tokenization, word embedding techniques, and the handling of variable-length sequences. It demonstrates proficiency in building and training neural networks for text classification tasks, essential for applications in social media analysis, customer feedback processing, and automated content moderation.",
         skills_used: ["Tensorflow", "Numpy", "Keras"],
         img: "imdb.png",
-        url: "https://github.com/Tawheed-tariq/IMDB-movie-review/blob/main/IMDB_movie_reviews.ipynb"
+        giturl: "https://github.com/Tawheed-tariq/IMDB-movie-review/blob/main/IMDB_movie_reviews.ipynb",
+        deployed:false
     },
     {
         id: "10",
@@ -366,6 +377,7 @@ export const projects = [
         desc: "This project involves contributions to the Linux kernel, demonstrating advanced skills in low-level system programming and operating system development. The work includes implementing new system calls to enhance kernel functionality. These custom system calls provide additional features or optimizations for specific use cases, such as improved process management, enhanced file system operations, or custom device drivers. The implementation requires a deep understanding of kernel internals, memory management, and system security. The project showcases proficiency in C programming within the context of kernel development, adhering to strict coding standards and performance requirements. It also demonstrates the ability to work with complex codebases, debug kernel-level issues, and contribute to open-source projects of significant scale and importance.",
         skills_used: ["C", "Kernel programming"],
         img: "linux.png",
-        url: "https://github.com/Tawheed-tariq/linux-kernel"
+        giturl: "https://github.com/Tawheed-tariq/linux-kernel",
+        deployed:false
     },
 ]

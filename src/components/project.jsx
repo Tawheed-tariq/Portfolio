@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-export default function Project({ title, desc, img, skillArr, url }) {
+export default function Project({ title, desc, img, skillArr, giturl, weburl, deployed }) {
   const [showPopup, setShowPopup] = useState(false);
 
   const nameShortner = (string, maxlength) => {
@@ -11,6 +11,22 @@ export default function Project({ title, desc, img, skillArr, url }) {
   const handleClick = () => {
     setShowPopup((prev) => !prev);
   };
+
+  const modalRef = useRef();
+
+  const handleClickOutside = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) 
+      setShowPopup((prev) => !prev);
+  };
+
+  useEffect(() => {
+    if (showPopup)
+      document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showPopup]);
 
   return (
     <>
@@ -35,7 +51,7 @@ export default function Project({ title, desc, img, skillArr, url }) {
       </div>
       {showPopup && (
         <div className="fixed inset-0 flex items-center z-[999] justify-center bg-gray-800 bg-opacity-75">
-          <div className="bg-white p-8 max-w-[1100px] rounded-lg">
+          <div ref={modalRef} className="bg-white p-8 max-w-[1100px] rounded-lg">
             <div className="flex flex-col gap-[15px]">
               <div className="flex items-center gap-5">
                 <img src={img} className={`w-10 h-10 `} />
@@ -52,10 +68,9 @@ export default function Project({ title, desc, img, skillArr, url }) {
               </div>
             </div>
             <div className="flex pt-5 px-3 justify-end gap-6">
-              <GithubBtn />
-              <BrowserBtn />
+              <GithubBtn GithubUrl={giturl} />
+              {deployed && <BrowserBtn BrowserUrl={weburl} />}
             </div>
-            <div onClick={handleClick}>close</div>
           </div>
         </div>
       )}
@@ -63,8 +78,9 @@ export default function Project({ title, desc, img, skillArr, url }) {
   );
 }
 
-const BrowserBtn = () => {
+const BrowserBtn = ({BrowserUrl}) => {
   return (
+    <a target="_blank" href={BrowserUrl}>
     <div className="group relative">
       <button>
         <svg
@@ -89,11 +105,13 @@ const BrowserBtn = () => {
         Web View<span></span>
       </span>
     </div>
+    </a>
   );
 };
 
-const GithubBtn = () => {
+const GithubBtn = ({GithubUrl}) => {
   return (
+    <a target="_blank" href={GithubUrl}>
     <div className="group relative">
       <button>
         <svg
@@ -118,6 +136,7 @@ const GithubBtn = () => {
         GitHub<span></span>
       </span>
     </div>
+    </a>
   );
 };
 
