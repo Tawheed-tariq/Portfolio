@@ -347,7 +347,7 @@ export const projects = [
     {
         id: "7",
         title: "Dog VS Cat Classifier",
-        desc: "The Dog VS Cat Classifier is a sophisticated machine learning project that employs deep learning techniques to distinguish between images of dogs and cats with high accuracy. Built using TensorFlow and Scikit-learn, this project implements a convolutional neural network (CNN) architecture optimized for image classification tasks. The model is trained on a large dataset of labeled dog and cat images, enabling it to learn complex features and patterns. Numpy is utilized for efficient numerical computations and data preprocessing. The project includes data augmentation techniques to improve model generalization and prevent overfitting. Matplotlib is used to visualize the training process, model performance metrics, and sample predictions. This classifier demonstrates proficiency in building and deploying state-of-the-art image classification models, showcasing skills essential for computer vision applications in fields such as pet recognition, animal monitoring, and automated image tagging.",
+        desc: "The Dog VS Cat Classifier is a machine learning project using deep learning to distinguish between images of dogs and cats. Built with TensorFlow and Scikit-learn, it utilizes the pre-trained MobileNetV2 model for efficient transfer learning. The model is fine-tuned on a large dataset of labeled images, employing data augmentation to improve generalization. Numpy handles numerical computations, while Matplotlib visualizes the training process and results. This project demonstrates skills in transfer learning, model fine-tuning, and deploying efficient image classification solutions for applications like pet recognition and animal monitoring",
         skills_used: ["Tensorflow", "Scikit-learn", "Numpy", "Matplotlib"],
         img: "img-classifier.png",
         giturl: "https://github.com/Tawheed-tariq/dog-vs-cat/blob/main/dog_vs_cat.ipynb",
@@ -378,6 +378,15 @@ export const projects = [
         skills_used: ["C", "Kernel programming"],
         img: "linux.png",
         giturl: "https://github.com/Tawheed-tariq/linux-kernel",
+        deployed:false
+    },
+    {
+        id: "11",
+        title: "Internet Knock Knock server",
+        desc: "This project implements an 'Internet Knock-Knock Protocol Server' in C, designed to engage clients in a playful knock-knock joke interaction over a network. The server utilizes TCP/IP socket programming to listen for incoming connections on port 30000, supporting multiple simultaneous clients through process forking. It employs a custom protocol for the joke exchange, guiding clients through a predefined conversation pattern and providing feedback for incorrect responses. The implementation showcases key networking concepts such as socket management, error handling, and signal processing for graceful shutdown. With its modular design and foundational network programming techniques, this project serves as both an educational tool for learning about network communication in C and a starting point for more complex networked applications.",
+        skills_used: ["C"],
+        img: "server.png",
+        giturl: "https://github.com/Tawheed-tariq/OS-course/blob/main/knock%20knock%20server/main.c",
         deployed:false
     },
 ]
