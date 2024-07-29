@@ -372,6 +372,15 @@ export const projects = [
         deployed:false
     },
     {
+        id: "12",
+        title: "Face Mask Detetion",
+        desc: "Developed a Convolutional Neural Network (CNN) for face mask detection using TensorFlow and Keras. This project addresses the need for automated health safety monitoring during the COVID-19 pandemic. The custom-designed CNN efficiently classifies images into 'with mask', 'without mask', and 'incorrectly worn mask' categories. Trained on a diverse dataset of facial images, the model employs data augmentation techniques to enhance generalization. The architecture balances accuracy and computational efficiency, featuring multiple convolutional layers, pooling layers, and fully connected layers. Implemented dropout and batch normalization for optimal performance. The model achieves high accuracy in real-time mask detection, suitable for integration into surveillance systems or mobile applications. This project demonstrates proficiency in deep learning, computer vision, and applying AI to solve relevant real-world problems.",
+        skills_used: ["Tensorflow", 'Scikit-learn', "Numpy", "Keras"],
+        img: "mask.png",
+        giturl: "https://github.com/Tawheed-tariq/face-mask-detection/blob/main/main.ipynb",
+        deployed:false
+    },
+    {
         id: "10",
         title: "Linux Kernel",
         desc: "This project involves contributions to the Linux kernel, demonstrating advanced skills in low-level system programming and operating system development. The work includes implementing new system calls to enhance kernel functionality. These custom system calls provide additional features or optimizations for specific use cases, such as improved process management, enhanced file system operations, or custom device drivers. The implementation requires a deep understanding of kernel internals, memory management, and system security. The project showcases proficiency in C programming within the context of kernel development, adhering to strict coding standards and performance requirements. It also demonstrates the ability to work with complex codebases, debug kernel-level issues, and contribute to open-source projects of significant scale and importance.",
