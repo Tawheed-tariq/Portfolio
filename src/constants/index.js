@@ -406,4 +406,13 @@ export const projects = [
         giturl: "https://github.com/Tawheed-tariq/OS-course/blob/main/knock%20knock%20server/main.c",
         deployed:false
     },
+    {
+        id: "13",
+        title: "Unix Shell",
+        desc: "This project implements a Unix-like shell in C, offering users a command-line interface to interact with the operating system. The shell supports a wide range of functionalities including basic command execution, input/output redirection, piping, background processes, and built-in commands. It employs sophisticated command parsing to tokenize user input, utilizes fork() and exec() for process creation and execution, and implements I/O redirection and piping through file descriptor manipulation. The shell includes built-in commands like cd and exit, manages environment variables, and maintains a command history. The project demonstrates advanced C programming skills, deep understanding of Unix system calls, process management, and file I/O operations, serving as a comprehensive example of systems programming and operating system concepts in practice.",
+        skills_used: ["C"],
+        img: "bash.svg",
+        giturl: "https://github.com/Tawheed-tariq/unix-shell/blob/main/main.c",
+        deployed:false
+    },
 ]
