@@ -46,6 +46,14 @@ export const contactLinks = [
 
 export const experience = [
     {
+        id: "3",
+        icon : "roorkee.png",
+        title: "Research Intern - IoT and Embedded Systems",
+        desc: "Mastered complex IoT ecosystems, integrating cloud platforms like AWS IoT and Azure IoT for scalable solutions. Implemented event-driven architectures to enhance IoT application performance. Developed robust security measures, incorporating Software-Defined Radio and embedded cryptography. Optimized IoT device management strategies, refined integration methodologies, and leveraged real-time analytics to extract actionable insights from IoT-generated data streams.",
+        strt: "july 2024",
+        end: "August 2024"
+    },
+    {
         id: "1",
         icon : "semicolon.png",
         title: "Technical Member - Semicolon",
