@@ -15,7 +15,7 @@ export default function About(){
     })
 
 
-    const texts = ["Full-stack Developer", "Web Scraper"];
+    const texts = ["Full-stack Developer","ML Analyst", "Web Scraper"];
 
     const [mousePos , setMousePos] = useState({
         x: 0,
