@@ -1,27 +1,53 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import SkillIcon from "./skillIcon";
-import AOS from "aos"
-// import "aos/dist/aos.css"
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 
+export const animateSection = (section, animationType, duration = 0.6) => {
+  const animationSettings = {
+    fadeUp: {
+      from: { opacity: 0, y: 200 },
+      to: { opacity: 1, y: 0 },
+    },
+  };
 
+  const { from, to } = animationSettings[animationType];
 
-export default function SkillCard({skillName, skillArray}){
-    // useEffect(()=>{
-    //     AOS.init({duration:900, anchorPlacement:"top-bottom"}),[]
-    // })
-    return(
-        <div 
-            // data-aos="zoom-in"
-            className={`border-[1px] sm:w-[700px] md:w-[900px] border-gray-400 px-[25px] py-[10px] my-[20px] rounded-3xl`}>
-            <h1 className={`text-xl md:text-2xl font-bold mb-[10px]`}><span className="decorate-text">{skillName}</span></h1>
-            <div className={`flex flex-wrap gap-[15px] my-[15px] md:mx-[20px]`}>
-                    {
-                        skillArray.map((skill) => (
-                            <SkillIcon key={skill.id} title={skill.title} icon={skill.icon}/>
-                        ))
-                    }
-            </div>
-        </div>
-    )
+  gsap.fromTo(section, from, {
+    ...to,
+    duration,
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+  });
+};
+
+export default function SkillCard({ skillName, skillArray }) {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    if (sectionRef.current) {
+      animateSection(sectionRef.current, "fadeUp");
+    }
+  }, []);
+
+  return (
+    <div
+      ref={sectionRef}
+      className={`border-[1px] sm:w-[700px] md:w-[900px] border-gray-400 px-[25px] py-[10px] my-[20px] rounded-3xl`}
+    >
+      <h1 className={`text-xl md:text-2xl font-bold mb-[10px]`}>
+        <span className="decorate-text">{skillName}</span>
+      </h1>
+      <div className={`flex flex-wrap gap-[15px] my-[15px] md:mx-[20px]`}>
+        {skillArray.map((skill) => (
+          <SkillIcon key={skill.id} title={skill.title} icon={skill.icon} />
+        ))}
+      </div>
+    </div>
+  );
 }

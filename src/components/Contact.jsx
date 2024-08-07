@@ -1,11 +1,39 @@
-import AOS from "aos";
-// import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export const animateSection = (section, animationType, duration = 0.6) => {
+  const animationSettings = {
+    fadeUp: {
+      from: { opacity: 0, y: 200 },
+      to: { opacity: 1, y: 0 },
+    },
+  };
+
+  const { from, to } = animationSettings[animationType];
+
+  gsap.fromTo(section, from, {
+    ...to,
+    duration,
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%",
+      toggleActions: "play none none none",
+    },
+  });
+};
+
 
 export default function Contact() {
-  // useEffect(() => {
-  //   AOS.init({ duration: 900, anchorPlacement: "top-bottom" }), [];
-  // });
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    if (sectionRef.current) {
+      animateSection(sectionRef.current, "fadeUp");
+    }
+  }, []);
   return (
     <div id="contact" className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
       <h1 className={`text-2xl md:text-3xl text-center font-bold`}>
@@ -14,7 +42,7 @@ export default function Contact() {
       </h1>
       <div className={`flex justify-center `}>
         <div
-          // data-aos="fade-up"
+          ref={sectionRef}
           className={` shadow w-full max-w-[600px] px-[20px] py-[10px] mt-[20px] rounded-2xl`}
         >
           <h1 className={`text-2xl font-bold `}>
