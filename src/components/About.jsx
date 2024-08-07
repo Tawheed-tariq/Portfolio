@@ -11,7 +11,7 @@ import "aos/dist/aos.css"
 
 export default function About(){
     useEffect(()=>{
-        AOS.init({duration:900, anchorPlacement:"top-center"}),[]
+        AOS.init({duration:1100, anchorPlacement:"top-center"}),[]
     })
 
 
