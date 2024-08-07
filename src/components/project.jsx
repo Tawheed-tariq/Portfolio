@@ -1,4 +1,6 @@
-import { useState } from "react";
+import Aos from "aos";
+import { useEffect, useState } from "react";
+import "aos/dist/aos.css"
 
 export default function Project({
   title,
@@ -20,9 +22,13 @@ export default function Project({
     setShowPopup((prev) => !prev);
   };
 
+  useEffect(()=>{
+    Aos.init({duration:900, anchorPlacement:"top-center"})
+},[])
+
   return (
     <>
-      <div className={`shadow rounded-md max-w-96 p-6 `} onClick={handleClick}>
+      <div data-aos="zoom-in" className={`shadow rounded-md max-w-96 p-6 `} onClick={handleClick}>
         <ProjectCard
           img={img}
           title={title}

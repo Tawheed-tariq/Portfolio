@@ -1,4 +1,12 @@
+import Aos from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css"
+
+
 export default function Contact() {
+  useEffect(()=>{
+    Aos.init({duration:900, anchorPlacement:"top-center"})
+},[])
   return (
     <div id="contact" className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
       <h1 className={`text-2xl md:text-3xl text-center font-bold`}>
@@ -7,6 +15,7 @@ export default function Contact() {
       </h1>
       <div className={`flex justify-center `}>
         <div
+          data-aos="fade-up"
           className={` shadow w-full max-w-[600px] px-[20px] py-[10px] mt-[20px] rounded-2xl`}
         >
           <h1 className={`text-2xl font-bold `}>
