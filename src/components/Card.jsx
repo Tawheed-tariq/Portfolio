@@ -12,7 +12,9 @@ export default function Card({title, Desc, from, to, img_url, grade, index}){
     //     }),[]
     // })
     return(
-        <div data-aos={index%2 == 0? 'zoom-in-right': 'zoom-in-left'} className={` shadow max-w-[800px] p-[15px] mx-[20px] my-[10px] rounded-xl flex gap-[15px] `}>
+        <div 
+        // data-aos={index%2 == 0? 'zoom-in-right': 'zoom-in-left'} 
+        className={` shadow max-w-[800px] p-[15px] mx-[20px] my-[10px] rounded-xl flex gap-[15px] `}>
             <div className="w-[40px]">
                 <img src={img_url} className={`w-[35px] h-[35px] mt-[10px]`} />
             </div>
