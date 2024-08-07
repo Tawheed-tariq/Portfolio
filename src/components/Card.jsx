@@ -7,11 +7,11 @@ gsap.registerPlugin(ScrollTrigger);
 const animateSection = (section, animationType, duration = 0.6) => {
   const animationSettings = {
     slideRight: {
-      from: { opacity: 0, x: -200 },
+      from: { opacity: 0, x: -400 },
       to: { opacity: 1, x: 0 },
     },
     slideLeft: {
-      from: { opacity: 0, x: 200 },
+      from: { opacity: 0, x: 400 },
       to: { opacity: 1, x: 0 },
     },
   };
@@ -21,10 +21,13 @@ const animateSection = (section, animationType, duration = 0.6) => {
   gsap.fromTo(section, from, {
     ...to,
     duration,
+    ease: 'power1.out',  // Smoother easing function
     scrollTrigger: {
       trigger: section,
-      start: 'top 80%',
-      toggleActions: "play none none none",
+      start: 'top 70%',
+      end: 'top 70%',
+      scrub: true,  // Ensures smooth scrolling animation
+      toggleActions: 'play none none none',
     },
   });
 };

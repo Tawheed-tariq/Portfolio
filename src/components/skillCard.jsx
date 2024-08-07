@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const animateSection = (section, animationType, duration = 0.6) => {
+export const animateSection = (section, animationType, duration = 0.8) => {
   const animationSettings = {
     fadeUp: {
       from: { opacity: 0, y: 200 },
@@ -18,10 +18,13 @@ export const animateSection = (section, animationType, duration = 0.6) => {
   gsap.fromTo(section, from, {
     ...to,
     duration,
+    ease: 'power1.out',  // Smoother easing function
     scrollTrigger: {
       trigger: section,
-      start: "top 80%",
-      toggleActions: "play none none none",
+      start: 'top bottom',
+      end: 'top bottom',
+    //   scrub: true,  // Ensures smooth scrolling animation
+      toggleActions: 'play none none none',
     },
   });
 };

@@ -18,6 +18,7 @@ body{
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     background: #F8FDF9;
+    overflow-x: hidden;
 }
 .link{
     transition: color 0.5s ;

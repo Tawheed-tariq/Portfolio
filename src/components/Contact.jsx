@@ -17,10 +17,13 @@ export const animateSection = (section, animationType, duration = 0.6) => {
   gsap.fromTo(section, from, {
     ...to,
     duration,
+    ease: 'power1.out',  // Smoother easing function
     scrollTrigger: {
       trigger: section,
-      start: "top 80%",
-      toggleActions: "play none none none",
+      start: 'top 80%',
+      end: 'top 80%',
+      scrub: true,  // Ensures smooth scrolling animation
+      toggleActions: 'play none none none',
     },
   });
 };
