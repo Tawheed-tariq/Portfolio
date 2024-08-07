@@ -1,42 +1,4 @@
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
-export const animateSection = (section, animationType, duration = 0.6) => {
-  const animationSettings = {
-    fadeUp: {
-      from: { opacity: 0, y: 200 },
-      to: { opacity: 1, y: 0 },
-    },
-  };
-
-  const { from, to } = animationSettings[animationType];
-
-  gsap.fromTo(section, from, {
-    ...to,
-    duration,
-    ease: 'power1.out',  // Smoother easing function
-    scrollTrigger: {
-      trigger: section,
-      start: 'top 80%',
-      end: 'top 80%',
-      scrub: true,  // Ensures smooth scrolling animation
-      toggleActions: 'play none none none',
-    },
-  });
-};
-
-
 export default function Contact() {
-  const sectionRef = useRef(null);
-
-  useEffect(() => {
-    if (sectionRef.current) {
-      animateSection(sectionRef.current, "fadeUp");
-    }
-  }, []);
   return (
     <div id="contact" className={`w-full py-[40px] px-[20px] md:px-[150px]`}>
       <h1 className={`text-2xl md:text-3xl text-center font-bold`}>
@@ -45,7 +7,6 @@ export default function Contact() {
       </h1>
       <div className={`flex justify-center `}>
         <div
-          ref={sectionRef}
           className={` shadow w-full max-w-[600px] px-[20px] py-[10px] mt-[20px] rounded-2xl`}
         >
           <h1 className={`text-2xl font-bold `}>
