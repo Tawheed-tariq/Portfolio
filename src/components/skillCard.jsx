@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import SkillIcon from "./skillIcon";
 import AOS from "aos"
-import "aos/dist/aos.css"
+// import "aos/dist/aos.css"
 
 
 
