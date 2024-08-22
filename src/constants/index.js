@@ -46,7 +46,7 @@ export const contactLinks = [
 
 export const experience = [
     {
-        id: "3",
+        id: "1",
         icon : "roorkee.png",
         title: "Research Intern - IoT and Embedded Systems",
         desc: "Mastered complex IoT ecosystems, integrating cloud platforms like AWS IoT and Azure IoT for scalable solutions. Implemented event-driven architectures to enhance IoT application performance. Developed robust security measures, incorporating Software-Defined Radio and embedded cryptography. Optimized IoT device management strategies, refined integration methodologies, and leveraged real-time analytics to extract actionable insights from IoT-generated data streams.",
@@ -54,7 +54,7 @@ export const experience = [
         end: "August 2024"
     },
     {
-        id: "1",
+        id: "2",
         icon : "semicolon.png",
         title: "Technical Member - Semicolon",
         desc: "As a technical member of Semicolon, the coding club at NIT Srinagar, I played a pivotal role in fostering a culture of innovation and technical excellence. Collaborating with a diverse team, I organized workshops, hackathons, and technical events to promote learning and skill development in various areas of technology.",
@@ -62,7 +62,15 @@ export const experience = [
         end: "Present"
     },
     {
-        id: "2",
+        id: "3",
+        icon: "techvaganza.png",
+        title: "Frontend Team Lead - Techvaganza",
+        desc: "Led the frontend development team for Techvaganza, the annual technical fest at NIT Srinagar. Designed and implemented responsive and user-friendly web pages, enhancing the overall user experience for thousands of participants. Collaborated closely with backend developers to ensure seamless integration and functionality.",
+        strt: "Aug 2024",
+        end: "Present"
+    },
+    {
+        id: "4",
         icon : "freelance.png",
         title: "Freelancer",
         desc: "As a dedicated freelancer, I specialize in web development and web scraping, offering tailored solutions to clients across various industries. With a strong foundation in programming languages such as HTML, CSS, JavaScript, and Python, I have successfully delivered projects ranging from dynamic websites to data-driven applications.",
