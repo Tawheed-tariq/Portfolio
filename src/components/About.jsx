@@ -101,7 +101,7 @@ export default function About(){
 
                 {/* resume button */}
                 <div className={`w-full flex justify-center`}>
-                    <a target="_blank" href="Resume.pdf">
+                    <a target="_blank" href="Tavaheed_resume.pdf">
                         <button data-aos="zoom-in-up" className={`w-[200px] shadow bg-transparent border-[3px] border-black backdrop-blur-md mt-[20px] font-semibold decorate-text text-xl cursor-pointer h-[55px] rounded-full `}>
                             Check Resume
                         </button>
