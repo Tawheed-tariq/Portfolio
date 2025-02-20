@@ -46,7 +46,24 @@ export const contactLinks = [
 
 export const experience = [
     {
-        id: "1",
+        id: "6",
+        icon: "iit_delhi.png",
+        title: "Project Intern - Optical Character Recognition (OCR)",
+        desc: "Developed a high-performance OCR model using transformer-based architectures, focusing on Urdu script recognition. Trained the Parseq OCR model on a large-scale dataset of 26 million images, achieving significant improvements in accuracy. Optimized text recognition pipelines by refining data augmentation techniques and loss functions. Addressed domain adaptation challenges by fine-tuning models for diverse handwriting styles and printed text variations.",
+        strt: "Dec 2024",
+        end: "March 2025"
+    },
+
+    {
+        id: "5",
+        icon: "iit_ropar.png",
+        title: "Research Intern - Machine Learning for Battery Materials",
+        desc: "Applied machine learning techniques to predict the electrochemical performance of doped lithium nickel-cobalt-manganese (NCM) cathodes. Evaluated various ML models, identifying XGBoost as the most effective for predicting initial and long-term charge capacities. Engineered domain-specific features capturing crystal structure, dopant effects, and electrochemical properties. Conducted extensive model validation to ensure robust and reliable performance insights for battery material research.",
+        strt: "Dec 2024",
+        end: "Feb 2024"
+    },
+    {
+        id: "4",
         icon : "roorkee.png",
         title: "Research Intern - IoT and Embedded Systems",
         desc: "Mastered complex IoT ecosystems, integrating cloud platforms like AWS IoT and Azure IoT for scalable solutions. Implemented event-driven architectures to enhance IoT application performance. Developed robust security measures, incorporating Software-Defined Radio and embedded cryptography. Optimized IoT device management strategies, refined integration methodologies, and leveraged real-time analytics to extract actionable insights from IoT-generated data streams.",
@@ -54,29 +71,29 @@ export const experience = [
         end: "August 2024"
     },
     {
-        id: "2",
+        id: "3",
         icon : "semicolon.png",
         title: "Technical Member - Semicolon",
         desc: "As a technical member of Semicolon, the coding club at NIT Srinagar, I played a pivotal role in fostering a culture of innovation and technical excellence. Collaborating with a diverse team, I organized workshops, hackathons, and technical events to promote learning and skill development in various areas of technology.",
         strt: "Sep 2023",
-        end: "Present"
+        end: "Aug 2024"
     },
     {
-        id: "3",
+        id: "2",
         icon: "techvaganza.png",
-        title: "Frontend Team Lead - Techvaganza",
+        title: "Web development Team Co-Lead - Techvaganza",
         desc: "Led the frontend development team for Techvaganza, the annual technical fest at NIT Srinagar. Designed and implemented responsive and user-friendly web pages, enhancing the overall user experience for thousands of participants. Collaborated closely with backend developers to ensure seamless integration and functionality.",
         strt: "Aug 2024",
-        end: "Present"
+        end: "Nov 2024"
     },
-    {
-        id: "4",
-        icon : "freelance.png",
-        title: "Freelancer",
-        desc: "As a dedicated freelancer, I specialize in web development and web scraping, offering tailored solutions to clients across various industries. With a strong foundation in programming languages such as HTML, CSS, JavaScript, and Python, I have successfully delivered projects ranging from dynamic websites to data-driven applications.",
-        strt: "Dec 2023",
-        end: "Present"
-    }
+    // {
+    //     id: "1",
+    //     icon : "freelance.png",
+    //     title: "Freelancer",
+    //     desc: "As a dedicated freelancer, I specialize in web development and web scraping, offering tailored solutions to clients across various industries. With a strong foundation in programming languages such as HTML, CSS, JavaScript, and Python, I have successfully delivered projects ranging from dynamic websites to data-driven applications.",
+    //     strt: "Dec 2023",
+    //     end: "Present"
+    // }
 ]
 
 export const education = [
@@ -84,7 +101,7 @@ export const education = [
         id: "1",
         icon : "NIT.png",
         title: "National Institute of technology Srinagar",
-        desc: "Currently in my fifth semester, I am pursuing a Bachelor of Technology (B.Tech) degree in Information Technology at NIT Srinagar. With a cumulative grade point average (CGPA) of 9.04, I have demonstrated strong academic performance and dedication to my studies.Developed a solid understanding of fundamental data structures and algorithms, Object-oriented C++, Operating Systems, Database Management Systems and Web Programming, enabling me to efficiently solve complex problems and optimize code.",
+        desc: "Currently in my sixth semester, I am pursuing a Bachelor of Technology (B.Tech) degree in Information Technology at NIT Srinagar. With a cumulative grade point average (CGPA) of 9.04, I have demonstrated strong academic performance and dedication to my studies.Developed a solid understanding of fundamental data structures and algorithms, Object-oriented C++, Operating Systems, Database Management Systems and Web Programming, enabling me to efficiently solve complex problems and optimize code.",
         strt: "Nov 2022",
         end: "Present",
         grade: "9.04 CGPA"
@@ -305,59 +322,12 @@ export const skills = [
 
 export const projects = [
     {
-        id: "1",
-        title: "Car Racing Game",
-        desc: "Created an engaging desktop-friendly racing game using HTML, CSS, and JavaScript. This project showcases frontend development skills with dynamic visuals and responsive controls. The game features smooth animations, collision detection, and score tracking, providing an immersive gaming experience. It demonstrates proficiency in DOM manipulation, event handling, and game logic implementation. The project highlights creativity in design and problem-solving skills in delivering an interactive web-based application, emphasizing adaptability and innovation in web development.",
-        skills_used: ["HTML", "CSS", "JavaScript"],
-        img: "sport-car.png",
-        giturl: "https://github.com/Tawheed-tariq/Racing-game",
-        weburl: "https://tawheed-tariq.github.io/Racing-game/",
-        deployed:true
-    },
-    {
         id: "6",
         title: "WP-Scanner",
         desc: "WP-Scanner is a sophisticated web application crafted with React and Flask, meticulously designed for penetration testing of WordPress websites. This tool combines a sleek, user-friendly frontend built with React, Tailwind CSS, and JavaScript, with a robust Python-Flask backend. It enables cybersecurity professionals to conduct comprehensive WordPress vulnerability assessments with precision and efficiency. The application features automated scanning for common WordPress vulnerabilities, plugin and theme analysis, and detailed reporting. MongoDB is utilized for data persistence, allowing for the storage and retrieval of scan results. The project showcases full-stack development skills, API integration, and a deep understanding of web security principles.",
         skills_used: ["Python", "flask", "ReactJS", "mongoDB", "HTML", "CSS3", "Tailwind CSS", "Javascript", "Figma"],
         img: "scanner.png",
         giturl: "https://github.com/Tawheed-tariq/WP-Scanner",
-        deployed:false
-    },
-    {
-        id: "3",
-        title: "Chat App",
-        desc: "Developed a feature-rich, real-time chat application using the MERN stack (MongoDB, Express.js, React.js, Node.js) along with HTML, CSS, and Chakra UI. This full-stack project enables users to send and receive messages in real-time, create group chats, and share media files. The application implements WebSocket technology for instant message delivery and notifications. User authentication and data encryption ensure secure communication. The frontend, designed using Figma and implemented with React and Chakra UI, provides a responsive and intuitive user interface. This project demonstrates proficiency in both frontend and backend technologies, showcasing skills in real-time data handling, state management, and creating scalable web applications.",
-        skills_used: ["HTML", "CSS", "JavaScript","React.js", "ChakraUI","Node.js", "Express.js", "MongoDB", "Figma"],
-        img: "chat.png",
-        giturl: "https://github.com/Tawheed-tariq/chat-app",
-        deployed:false
-    },
-    {
-        id: "4",
-        title: "Google Maps Scraper",
-        desc: "Developed an advanced web scraping and automation tool named Google Maps Scraper. This Python-based project utilizes Playwright for browser automation and robust web scraping capabilities. It extracts essential business information including name, address, website URL, and phone number from specified searches on Google Maps. The scraper implements intelligent parsing algorithms to handle various data formats and structures. Pandas is used for data manipulation and Excel sheet generation, providing clean and organized output for easy analysis. The project incorporates Argparse for a user-friendly command-line interface, allowing customizable search parameters. This tool significantly streamlines the information retrieval process, enhancing efficiency in data gathering tasks for business intelligence and market research.",
-        skills_used: ["Python", "Pandas", "Argparse", "Playwright", "Web Scraping", "Automation"],
-        img: "map.png",
-        giturl: "https://github.com/Tawheed-tariq/google-maps-scrapper",
-        deployed:false
-    },
-    {
-        id: "2",
-        title: "Cryptyd",
-        desc: "Cryptyd is a sophisticated cryptocurrency dashboard frontend developed using a modern tech stack including HTML, CSS, JavaScript, React.js, and Chakra UI. The project showcases advanced frontend development skills, with a focus on creating a sleek, intuitive user interface designed in Figma. Key features include real-time cryptocurrency price tracking, interactive price charts, portfolio management tools, and detailed asset information. The dashboard leverages React's component-based architecture for efficient state management and reusable UI elements. Chakra UI is utilized for responsive design and consistent styling across the application. Integration with cryptocurrency APIs enables live data updates, providing users with accurate and timely market information. This project demonstrates proficiency in creating complex, data-driven web applications with a polished user experience.",
-        skills_used: ["HTML", "CSS", "JavaScript", "React.js", "ChakraUI", "Figma"],
-        img: "cryptocurrency.png",
-        giturl: "https://github.com/Tawheed-tariq/cryptyd",
-        weburl: "https://cryptyd.netlify.app/",
-        deployed:true
-    },
-    {
-        id: "5",
-        title: "Crypto Scraper",
-        desc: "CryptoScraper is an advanced data extraction tool designed to gather real-time cryptocurrency information from various online sources. Utilizing Playwright and Scrapy, this Python-based project automates the process of navigating through JavaScript-heavy websites and extracting relevant data. The scraper is capable of handling dynamic content, bypassing anti-bot measures, and ensuring high-quality data collection. Extracted information, including cryptocurrency prices, market caps, and trading volumes, is stored in MongoDB for efficient data management and analysis. The tool implements robust error handling and retry mechanisms to ensure data integrity and completeness. This project showcases skills in web scraping, automation, and database management, providing valuable insights for cryptocurrency enthusiasts, traders, and analysts.",
-        skills_used: ["Python", "Scrapy", "Scrapy-playwright", "mongoDB", "Web Scraping", "Automation"],
-        img: "bitcoin.png",
-        giturl: "https://github.com/Tawheed-tariq/crypto-scrapper",
         deployed:false
     },
     {
@@ -403,6 +373,53 @@ export const projects = [
         skills_used: ["C", "Kernel programming"],
         img: "linux.png",
         giturl: "https://github.com/Tawheed-tariq/linux-kernel",
+        deployed:false
+    },
+    {
+        id: "1",
+        title: "Car Racing Game",
+        desc: "Created an engaging desktop-friendly racing game using HTML, CSS, and JavaScript. This project showcases frontend development skills with dynamic visuals and responsive controls. The game features smooth animations, collision detection, and score tracking, providing an immersive gaming experience. It demonstrates proficiency in DOM manipulation, event handling, and game logic implementation. The project highlights creativity in design and problem-solving skills in delivering an interactive web-based application, emphasizing adaptability and innovation in web development.",
+        skills_used: ["HTML", "CSS", "JavaScript"],
+        img: "sport-car.png",
+        giturl: "https://github.com/Tawheed-tariq/Racing-game",
+        weburl: "https://tawheed-tariq.github.io/Racing-game/",
+        deployed:true
+    },
+    {
+        id: "3",
+        title: "Chat App",
+        desc: "Developed a feature-rich, real-time chat application using the MERN stack (MongoDB, Express.js, React.js, Node.js) along with HTML, CSS, and Chakra UI. This full-stack project enables users to send and receive messages in real-time, create group chats, and share media files. The application implements WebSocket technology for instant message delivery and notifications. User authentication and data encryption ensure secure communication. The frontend, designed using Figma and implemented with React and Chakra UI, provides a responsive and intuitive user interface. This project demonstrates proficiency in both frontend and backend technologies, showcasing skills in real-time data handling, state management, and creating scalable web applications.",
+        skills_used: ["HTML", "CSS", "JavaScript","React.js", "ChakraUI","Node.js", "Express.js", "MongoDB", "Figma"],
+        img: "chat.png",
+        giturl: "https://github.com/Tawheed-tariq/chat-app",
+        deployed:false
+    },
+    {
+        id: "4",
+        title: "Google Maps Scraper",
+        desc: "Developed an advanced web scraping and automation tool named Google Maps Scraper. This Python-based project utilizes Playwright for browser automation and robust web scraping capabilities. It extracts essential business information including name, address, website URL, and phone number from specified searches on Google Maps. The scraper implements intelligent parsing algorithms to handle various data formats and structures. Pandas is used for data manipulation and Excel sheet generation, providing clean and organized output for easy analysis. The project incorporates Argparse for a user-friendly command-line interface, allowing customizable search parameters. This tool significantly streamlines the information retrieval process, enhancing efficiency in data gathering tasks for business intelligence and market research.",
+        skills_used: ["Python", "Pandas", "Argparse", "Playwright", "Web Scraping", "Automation"],
+        img: "map.png",
+        giturl: "https://github.com/Tawheed-tariq/google-maps-scrapper",
+        deployed:false
+    },
+    {
+        id: "2",
+        title: "Cryptyd",
+        desc: "Cryptyd is a sophisticated cryptocurrency dashboard frontend developed using a modern tech stack including HTML, CSS, JavaScript, React.js, and Chakra UI. The project showcases advanced frontend development skills, with a focus on creating a sleek, intuitive user interface designed in Figma. Key features include real-time cryptocurrency price tracking, interactive price charts, portfolio management tools, and detailed asset information. The dashboard leverages React's component-based architecture for efficient state management and reusable UI elements. Chakra UI is utilized for responsive design and consistent styling across the application. Integration with cryptocurrency APIs enables live data updates, providing users with accurate and timely market information. This project demonstrates proficiency in creating complex, data-driven web applications with a polished user experience.",
+        skills_used: ["HTML", "CSS", "JavaScript", "React.js", "ChakraUI", "Figma"],
+        img: "cryptocurrency.png",
+        giturl: "https://github.com/Tawheed-tariq/cryptyd",
+        weburl: "https://cryptyd.netlify.app/",
+        deployed:true
+    },
+    {
+        id: "5",
+        title: "Crypto Scraper",
+        desc: "CryptoScraper is an advanced data extraction tool designed to gather real-time cryptocurrency information from various online sources. Utilizing Playwright and Scrapy, this Python-based project automates the process of navigating through JavaScript-heavy websites and extracting relevant data. The scraper is capable of handling dynamic content, bypassing anti-bot measures, and ensuring high-quality data collection. Extracted information, including cryptocurrency prices, market caps, and trading volumes, is stored in MongoDB for efficient data management and analysis. The tool implements robust error handling and retry mechanisms to ensure data integrity and completeness. This project showcases skills in web scraping, automation, and database management, providing valuable insights for cryptocurrency enthusiasts, traders, and analysts.",
+        skills_used: ["Python", "Scrapy", "Scrapy-playwright", "mongoDB", "Web Scraping", "Automation"],
+        img: "bitcoin.png",
+        giturl: "https://github.com/Tawheed-tariq/crypto-scrapper",
         deployed:false
     },
     {
