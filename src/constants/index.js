@@ -41,6 +41,11 @@ export const contactLinks = [
         id: "3",
         url: "mailto:tawheedtariq090@gmail.com",
         icon: 'gmail.png'
+    },
+    {
+        id: "4",
+        url: "https://scholar.google.com/citations?user=tI1EJBMAAAAJ&hl=en",
+        icon: 'scholar.svg'
     }
 ]
 
@@ -48,15 +53,17 @@ export const experience = [
     {
         id: "6",
         icon: "iit_delhi.png",
+        organization: "IIT Delhi",
         title: "Project Intern - Optical Character Recognition (OCR)",
         desc: "Developed a high-performance OCR model using transformer-based architectures, focusing on Urdu script recognition. Trained the Parseq OCR model on a large-scale dataset of 26 million images, achieving significant improvements in accuracy. Optimized text recognition pipelines by refining data augmentation techniques and loss functions. Addressed domain adaptation challenges by fine-tuning models for diverse handwriting styles and printed text variations.",
         strt: "Dec 2024",
-        end: "March 2025"
+        end: "Apr 2025"
     },
 
     {
         id: "5",
         icon: "iit_ropar.png",
+        organization: "IIT Ropar",
         title: "Research Intern - Machine Learning for Battery Materials",
         desc: "Applied machine learning techniques to predict the electrochemical performance of doped lithium nickel-cobalt-manganese (NCM) cathodes. Evaluated various ML models, identifying XGBoost as the most effective for predicting initial and long-term charge capacities. Engineered domain-specific features capturing crystal structure, dopant effects, and electrochemical properties. Conducted extensive model validation to ensure robust and reliable performance insights for battery material research.",
         strt: "Dec 2024",
@@ -65,6 +72,7 @@ export const experience = [
     {
         id: "4",
         icon : "roorkee.png",
+        organization: "IIT Roorkee",
         title: "Research Intern - IoT and Embedded Systems",
         desc: "Mastered complex IoT ecosystems, integrating cloud platforms like AWS IoT and Azure IoT for scalable solutions. Implemented event-driven architectures to enhance IoT application performance. Developed robust security measures, incorporating Software-Defined Radio and embedded cryptography. Optimized IoT device management strategies, refined integration methodologies, and leveraged real-time analytics to extract actionable insights from IoT-generated data streams.",
         strt: "july 2024",
@@ -73,6 +81,7 @@ export const experience = [
     {
         id: "3",
         icon : "semicolon.png",
+        organization: "NIT Srinagar",
         title: "Technical Member - Semicolon",
         desc: "As a technical member of Semicolon, the coding club at NIT Srinagar, I played a pivotal role in fostering a culture of innovation and technical excellence. Collaborating with a diverse team, I organized workshops, hackathons, and technical events to promote learning and skill development in various areas of technology.",
         strt: "Sep 2023",
@@ -81,6 +90,7 @@ export const experience = [
     {
         id: "2",
         icon: "techvaganza.png",
+        organization: "NIT Srinagar",
         title: "Web development Team Co-Lead - Techvaganza",
         desc: "Led the frontend development team for Techvaganza, the annual technical fest at NIT Srinagar. Designed and implemented responsive and user-friendly web pages, enhancing the overall user experience for thousands of participants. Collaborated closely with backend developers to ensure seamless integration and functionality.",
         strt: "Aug 2024",
@@ -441,3 +451,4 @@ export const projects = [
         deployed:false
     },
 ]
+

@@ -21,6 +21,7 @@ export default function Experience(){
                                     from={item.strt}
                                     to={item.end}
                                     index={index}
+                                    organization={item.organization}
                                 />
                             </div>
                         ))
