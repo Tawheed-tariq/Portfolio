@@ -51,6 +51,16 @@ export const contactLinks = [
 
 export const experience = [
     {
+        id: "7",
+        icon: "gaash.png",
+        organization: "NIT Srinagar - Gaash Lab",
+        title: "Web Development Team Lead",
+        desc: "Leading a team of 15+ members in developing end-user web applications tailored for real-world use. Worked on multiple real-world projects, focusing on scalable, production-ready platforms with seamless backend and frontend integration. Actively involved in project planning, task delegation, code reviews, and mentoring junior developers to ensure high team productivity.",
+        strt: "Dec 2024",
+        end: "Current"
+    },
+
+    {
         id: "6",
         icon: "iit_delhi.png",
         organization: "IIT Delhi",

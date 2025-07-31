@@ -3,16 +3,18 @@ import { experience } from "../constants";
 
 
 
-export default function Experience(){
-    return(
+export default function Experience() {
+    return (
         <>
-            <div id="exp" className={`w-full py-[40px] px-[20px] xl:px-[150px]`}>
-                <h1 className={`text-2xl  text-center mb-[20px] font-bold md:text-3xl`}><span className="heading">Experience</span>  </h1>
+            <div id="exp" className="w-full py-10 px-5 xl:px-36 overflow-x-hidden">
+                <h1 className="text-2xl text-center mb-5 font-bold md:text-3xl">
+                    <span className="heading">Experience</span>
+                </h1>
 
-                <div className={`timeline-items flex flex-wrap relative max-w-[100%]`}>
+                <div className="timeline-items flex flex-wrap relative w-full">
                     {
-                        experience.map((item,index) => (
-                            <div key={item.id} className={`timeline-item mb-[10px] md:mb-[40px] w-[100%] relative`}>
+                        experience.map((item, index) => (
+                            <div key={item.id} className="timeline-item mb-2 md:mb-10 w-full relative">
                                 <div className="timeline-dot"></div>
                                 <Card
                                     img_url={item.icon}

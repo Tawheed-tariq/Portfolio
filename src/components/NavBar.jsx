@@ -5,7 +5,7 @@ export default function NavBar(){
     return(
         <nav>
             {/* navbar for devices of width greater than 768px */}
-            <div className={`bg-transparent backdrop-blur-sm w-full h-[70px] border-b-[1px]  border-black hidden sm:flex justify-between items-center px-[40px] md:px-[80px] lg:px-[170px] xl:px-[250px] fixed z-10`}>
+            <div className={`bg-transparent backdrop-blur-sm w-full h-16 border-b border-black hidden sm:flex justify-between items-center px-10 md:px-20 lg:px-40 xl:px-64 fixed z-10`}>
                 <div className={`flex gap-2 items-center`}>
                     <img className='w-8 h-8 rounded-full' src="logo.jpeg" alt="." />
                     <p className='text-txt text-lg md:text-[20px] font-semibold'>Tavaheed Tariq</p>

@@ -68,7 +68,7 @@ export default function About(){
 
     return(
         <>
-            <div id="about" className={`w-full min-h-[90vh] px-[20px] xl:px-[250px]`}>
+            <div id="about" className={`w-full min-h-[90vh] px-5 xl:px-64`}>
                 {/* About me */}
                 <div className={` gap-[25px] w-full h-[50%] flex flex-col justify-center items-center pt-[100px] md:pt-[150px]`}>
                     <h1 data-aos="zoom-in-down" onMouseEnter={textEnter} onMouseLeave={textLeave} className={`text-xl md:text-3xl font-bold text-txt`}> <span className={`decorate-text`}>Hello</span>, I am Tavaheed Tariq</h1>
